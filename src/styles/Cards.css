@@ -1,0 +1,31 @@
+.cards-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1em;
+  margin-block: 3em;
+  text-align: left;
+}
+.card {
+  background-color: #333;
+  border-radius: 8px;
+  padding: 1em;
+  display: grid;
+  gap: 0.25rem;
+}
+.card.single {
+  grid-column: span 2;
+}
+.name {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+.card p {
+  font-size: 0.8rem;
+  color: #aaa;
+}
+
+@media screen and (max-width: 764px) {
+  .cards-wrapper {
+    grid-template-columns: 1fr;
+  }
+}

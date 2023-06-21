@@ -1,0 +1,43 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 12em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+  filter: drop-shadow(0 0 3em white);
+  animation: glow 1.5s ease-in-out infinite alternate;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 6em white);
+}
+
+@keyframes glow {
+  from {
+    filter: drop-shadow(0 0 2em white);
+  }
+  to {
+    filter: drop-shadow(0 0 5em white);
+  }
+}
+
+.title {
+  font-size: 3em;
+  font-weight: 800;
+  text-transform: capitalize;
+  margin: 0.5em 0;
+}
+
+button {
+  background-color: #111;
+  margin-bottom: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
