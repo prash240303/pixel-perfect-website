@@ -16,7 +16,7 @@ function App() {
           <img src={pixelLogo} className='logo' alt='Vite logo' />
         </a>
       </div>
-      <h1 className='title'>Pixel Perfect</h1>
+      <h1 className='title'>Pixel </h1>
       <button onClick={() => fetchAPI(setData, setLoading)}>
         {loading ? 'Loading...' : 'Fetch API'}
       </button>
