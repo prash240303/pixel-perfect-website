@@ -7,6 +7,7 @@ import fetchAPI from './utils/fetchAPI'
 
 import Home from './Pages/Home'
 import Committee from './Pages/Committee'
+import ContactUs from './Pages/ContactUs'
 
 
 
@@ -64,7 +65,8 @@ function App() {
     
     <Routes> 
       <Route path='/home' element={<Home/>}/>
-      <Route path='/Committee' element={<Committee/>}/>
+      <Route path='/committee' element={<Committee/>}/>
+      <Route path='/contact' element={<ContactUs/>}/>
     </Routes>
    
     </main>

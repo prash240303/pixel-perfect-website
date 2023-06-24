@@ -1,8 +1,6 @@
 import {React, useEffect, useState} from 'react'
-import Divider from '../components/HorizontalDivider'
 import PersonCard from '../components/committee/PersonCard'
-import HorizontalDivider from '../components/HorizontalDivider'
-import VerticalDivider from '../components/committee/VerticalDivider'
+import VerticalDivider from '../components/VerticalDivider'
 import fetchAPI from '../utils/fetchAPI'
 import Card from '../components/card'
 function Committee() {
@@ -22,9 +20,8 @@ function Committee() {
           ORGANIZING COMMITTEE
         </div>
         <VerticalDivider />
-        <div className='flex flex-col gap-6 h-fill items-start  align-top '>
           { (
-            <div id='cards-wrapper' className='cards-wrapper'>
+            <div id='cards-wrapper' className='flex flex-col gap-6  items-start  align-top '>
               {data.length > 0 ? (
                 data.map((item) => {
                   return <PersonCard key={item.id} item={item} />
@@ -50,7 +47,6 @@ function Committee() {
           )}
 
          
-        </div>
       </div>
 
     </div>

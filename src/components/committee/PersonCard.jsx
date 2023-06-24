@@ -4,8 +4,8 @@ import HorizontalDivider from '../HorizontalDivider'
 const PersonCard= ({single , item}) =>{
     // console.log(item)
     return (
-        <div  className='flex flex-col items-start  gap-6 '>
-            <div className='flex flex-row gap-6'>
+        <div  className='flex flex-col items-start h-fill   '>
+            <div className='flex flex-row  h-fill gap-6 border-b pb-6 border-black'>
                 <div className='flex flex-col  w-[430px] gap-5 items-start  justify-items-stretch ' >
                     <div className='flex flex-col items-start '>
                         <div className='flex flex-col  justify-center items-stretch font-bold text-[56px] leading-[4.5rem]'>{item.Type}</div>
@@ -26,7 +26,7 @@ const PersonCard= ({single , item}) =>{
                     </div>
                 </div>
             </div>
-            <HorizontalDivider />
+           
         </div>
 
 
