@@ -1,13 +1,19 @@
-import {React, useState} from 'react'
+import {React, useEffect, useState} from 'react'
 import Divider from '../components/HorizontalDivider'
 import PersonCard from '../components/committee/PersonCard'
 import HorizontalDivider from '../components/HorizontalDivider'
 import VerticalDivider from '../components/committee/VerticalDivider'
 import fetchAPI from '../utils/fetchAPI'
+import Card from '../components/card'
 function Committee() {
   const [data, setData] = useState([])
   const [loading, setLoading] = useState(false)
 
+  useEffect(() => {
+    fetchAPI(setData, setLoading);
+  }, []);
+  console.log(data)
+  
   return (
 
     <div className='flex flex-col items-start gap-6 p-6 justify-start  self-stretch border border-blue-400'>
@@ -17,11 +23,6 @@ function Committee() {
         </div>
         <VerticalDivider />
         <div className='flex flex-col gap-6 h-fill items-start  align-top '>
-
-
-        
-
-
           { (
             <div id='cards-wrapper' className='cards-wrapper'>
               {data.length > 0 ? (
@@ -34,13 +35,13 @@ function Committee() {
                     single
                     item={{
                       id: 'default',
-                      Subtype: 'Click on the fetch API button above',
-                      Name: 'The fetched result will be shown here',
-                      Designation: 'The fetched result will be shown here',
-                      imgLink: 'The fetched result will be shown here',
-                      Institute: 'The fetched result will be shown here',
-                      ProfileLink: 'The fetched result will be shown here',
-                      Institute: 'The fetched result will be shown here',
+                      Subtype: 'Loading',
+                      Name: 'Loading',
+                      Designation: 'Loading',
+                      imgLink: 'Loading',
+                      Institute:'Loading',
+                      ProfileLink: 'Loading',
+                      Institute: 'Loading',
                     }}
                   />
                 </>
@@ -48,12 +49,13 @@ function Committee() {
             </div>
           )}
 
-          <PersonCard />
-          <PersonCard />
-          <PersonCard />
+         
         </div>
       </div>
+
     </div>
+
+
 
   )
 }
