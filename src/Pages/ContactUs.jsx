@@ -1,32 +1,48 @@
-import React from 'react'
+import { React, useEffect, useState } from 'react';
+import fetchAPI from '../utils/fetchAPI';
+import ContactCard from '../components/contact/ContactCard';
+import HorizontalDivider from '../components/HorizontalDivider';
+import '../styles/App.css';
 
 function ContactUs() {
-    return (
-        <div className='w-fill flex px-6 py-6 border border-blue-400  '>
-            <div className='flex w-fill flex-row gap-5  border border-x-black'>
-                <div className='w-[500px] flex flex-col px-6 gap-6 border border-r-black'>
-                    <div className='flex font-bold text-7xl'>Contact Us</div>
-                    <div className='flex w-[500px] flex-col gap-3 items-start font-[inter]'>
-                        <div className='text-3xl font-bold'>Name</div>
-                        <div className='text-lg font-semibold' >Associate Professor, Electrical Engineering</div>
-                        <div className='text-lg font-semibold' >Indian Institute of Technology Gandhinagar</div>
-                        <div className='text-lg font-semibold' >Palaj, Gandhinagar - 382355, Gujarat, India</div>
-                        <div className='text-lg font-semibold' >phone no - 999999999</div>
-                        <div className='text-lg font-semibold' >email - abc@gmail.com</div>
-                        <div className='text-lg font-semibold' >fAx - 126326352362</div>
-                    </div>
-                </div>
-                <div className='flex flex-col gap-3 '>
-                    <div>  AROUND THE WEB:</div>
-                    <a href=""><img src="/pixel-white.svg" alt="" className='w-11' /></a>
-                </div>
-                <div >
-                <img src="/pixel-white.svg" alt="" className='w-[430px] h-[400px]' />
-                </div>
-            </div>
+  const [data, setData] = useState([]);
+  const [loading, setLoading] = useState(false);
 
-        </div>
-    )
+  useEffect(() => {
+    fetchAPI(setData, setLoading);
+  }, []);
+
+  return (
+    <div className=' p-0 m-0 flex items-center self-stretch'>
+      <div className='flex flex-col gap-6 px-6 py-6 border self-stretch border-blue-400'>
+        {data.length > 0 ? (
+          data.map((item) => {
+            return <ContactCard key={item.id} item={item} />;
+          })
+        ) : (
+          <>
+            <ContactCard
+              single
+              item={{
+                id: 'default',
+                title: 'Loading',
+                Name: 'Loading',
+                Designation: 'Loading',
+                imgLink: 'Loading',
+                Institute: 'Loading',
+                ProfileLink: 'Loading',
+                phone: 'Loading',
+                email: 'Loading',
+                fax: 'Loading',
+                feature: 'Loading',
+              }}
+            />
+            <HorizontalDivider />
+          </>
+        )}
+      </div>
+    </div>
+  );
 }
 
-export default ContactUs
+export default ContactUs;

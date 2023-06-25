@@ -2,7 +2,6 @@ import React from 'react'
 import HorizontalDivider from '../HorizontalDivider'
 
 const PersonCard= ({single , item}) =>{
-    // console.log(item)
     return (
         <div  className='flex flex-col items-start h-fill   '>
             <div className='flex flex-row  h-fill gap-6 border-b pb-6 border-black'>
@@ -18,7 +17,7 @@ const PersonCard= ({single , item}) =>{
                     </div>
                 </div>
                 <div className='flex flex-col items-start self-strech gap-6'>
-                    <img src={item.imgLink} className='w-[26.5rem] h-[22.5rem] font-[inter]'  alt="image" />
+                    <img src={item.ImgLink} className='w-[26.5rem] h-[22.5rem] font-[inter]'  alt="image" />
                     <div className='flex flex-row  justify-between  self-stretch font-[inter] font-semibold items-start'>
                         <a href={item.ProfileLink} className='font-bold text-[0.78rem]'>PROFILE LINK</a>
                         <a href="" className='font-bold text-[0.78rem]'>LINKEDIN</a>
@@ -26,7 +25,6 @@ const PersonCard= ({single , item}) =>{
                     </div>
                 </div>
             </div>
-           
         </div>
 
 
