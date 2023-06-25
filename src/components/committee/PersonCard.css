@@ -1,0 +1,43 @@
+.personImage {
+    /* position: relative; */
+    width: 424px;
+    height: 360px;
+    flex-shrink: 0;
+    background: url(https://www.pluggedin.com/wp-content/uploads/2019/12/bad-teacher-1200x901.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.whiteBox {
+    /* position: absolute; */
+    /* bottom: 000; */
+    /* right: 0; */
+    width: 85.81px;
+    height: 85.81px;
+    border-radius: 21.453px 0px 0px 0px;
+    background: var(--white, #FFF);
+
+}
+
+.whiteBoxUpper {
+    width: 21.453px;
+    height: 21.453px;
+    background: var(--white, #FFF);
+    mask: url('#curved-mask');
+
+}
+
+.whiteBoxLower {
+    width: 21.453px;
+    height: 21.453px;
+    flex-shrink: 0;
+    mask: url('#curved-mask');
+    background: var(--white, #FFF);
+
+}
