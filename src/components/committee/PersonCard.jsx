@@ -1,9 +1,10 @@
 import React from 'react'
 import HorizontalDivider from '../HorizontalDivider'
+import './PersonCard.css'
 
-const PersonCard= ({single , item}) =>{
+const PersonCard = ({ single, item }) => {
     return (
-        <div  className='flex flex-col items-start h-fill   '>
+        <div className='flex flex-col items-start h-fill   '>
             <div className='flex flex-row  h-fill gap-6 border-b pb-6 border-black'>
                 <div className='flex flex-col  w-[430px] gap-5 items-start  justify-items-stretch ' >
                     <div className='flex flex-col items-start '>
@@ -17,7 +18,31 @@ const PersonCard= ({single , item}) =>{
                     </div>
                 </div>
                 <div className='flex flex-col items-start self-strech gap-6'>
-                    <img src={item.ImgLink} className='w-[26.5rem] h-[22.5rem] font-[inter]'  alt="image" />
+                    <div className='personImage' alt="image">
+                        <div className='whiteBoxUpper'>
+                            <svg width="100" height="100">
+                                <mask id="curved-mask">
+                                    <rect x="0" y="0" width="100%" height="100%" fill="black" />
+                                    <circle cx="50%" cy="50%" r="50%" fill="white" />
+                                </mask>
+                            </svg>
+                        </div>
+                        <div class='flex items-end'>
+
+                            <div className='whiteBoxLower'>
+
+                            <svg width="100" height="100">
+                                <mask id="curved-mask">
+                                    <rect x="0" y="0" width="100%" height="100%" fill="black" />
+                                    <circle cx="50%" cy="50%" r="50%" fill="white" />
+                                </mask>
+                            </svg>
+                            </div>
+                            <div className='whiteBox'></div>
+                        </div>
+
+                    </div>
+
                     <div className='flex flex-row  justify-between  self-stretch font-[inter] font-semibold items-start'>
                         <a href={item.ProfileLink} className='font-bold text-[0.78rem]'>PROFILE LINK</a>
                         <a href="" className='font-bold text-[0.78rem]'>LINKEDIN</a>
