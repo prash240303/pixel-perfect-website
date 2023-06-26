@@ -28,15 +28,13 @@ const PersonCard = ({ single, item }) => {
                             </svg>
                         </div>
                         <div class='flex items-end'>
-
                             <div className='whiteBoxLower'>
-
-                            <svg width="100" height="100">
-                                <mask id="curved-mask">
-                                    <rect x="0" y="0" width="100%" height="100%" fill="black" />
-                                    <circle cx="50%" cy="50%" r="50%" fill="white" />
-                                </mask>
-                            </svg>
+                                <svg width="100" height="100">
+                                    <mask id="curved-mask">
+                                        <rect x="0" y="0" width="100%" height="100%" fill="black" />
+                                        <circle cx="50%" cy="50%" r="50%" fill="white" />
+                                    </mask>
+                                </svg>
                             </div>
                             <div className='whiteBox'></div>
                         </div>
