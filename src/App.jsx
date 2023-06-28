@@ -2,16 +2,12 @@ import { useState } from 'react'
 import './styles/App.css'
 import './styles/Cards.css'
 // import Card from './components/card'
-import fetchAPI from './utils/fetchAPI'
 
 
 import Home from './Pages/Home'
 import Committee from './Pages/Committee'
 import ContactUs from './Pages/ContactUs'
-
-
-
-import { Routes, Route } from 'react-router-dom'
+import { Routes, Route  } from 'react-router-dom'
 function App() {
   const [loading, setLoading] = useState(false)
   const [data, setData] = useState([])
@@ -60,16 +56,11 @@ function App() {
     //   </p>
     // </>
 
-
-    < main>
-    
-    <Routes> 
-      <Route path='/home' element={<Home/>}/>
-      <Route path='/committee' element={<Committee/>}/>
-      <Route path='/contact' element={<ContactUs/>}/>
-    </Routes>
-   
-    </main>
+      <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='/committee' element={<Committee />} />
+        <Route path='/contact' element={<ContactUs />} />
+      </Routes>
   )
 }
 

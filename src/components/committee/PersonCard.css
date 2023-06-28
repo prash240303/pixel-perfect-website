@@ -3,10 +3,9 @@
     width: 424px;
     height: 360px;
     flex-shrink: 0;
-    background: url(https://www.pluggedin.com/wp-content/uploads/2019/12/bad-teacher-1200x901.jpg);
     background-position: center;
     background-repeat: no-repeat;
-
+    border-radius: 20px;
     background-size: cover;
     display: flex;
     flex-direction: column;
@@ -20,7 +19,7 @@
     /* right: 0; */
     width: 85.81px;
     height: 85.81px;
-    border-radius: 21.453px 0px 0px 0px;
+    border-radius: 20px 0px 0px 0px;
     background: var(--white, #FFF);
 
 }

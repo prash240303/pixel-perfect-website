@@ -2,7 +2,7 @@ import React from 'react'
 
 function VerticalDivider() {
   return (
-    <div className='w-[0.0625rem] h-full self-strech bg-black'></div>
+    <div className='w-fill h-[30px] bg-blue-300'></div>
     )
 }
 
