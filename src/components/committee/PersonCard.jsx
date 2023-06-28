@@ -23,7 +23,7 @@ const PersonCard = ({ single, item }) => {
                             <svg width="100" height="100">
                                 <mask id="curved-mask">
                                     <rect x="0" y="0" width="100%" height="100%" fill="black" />
-                                    <circle cx="50%" cy="50%" r="50%" fill="white" />
+                                    <circle cx="50%" cy="50%" r="50%" fill="blue" />
                                 </mask>
                             </svg>
                         </div>
@@ -38,6 +38,8 @@ const PersonCard = ({ single, item }) => {
                             </div>
                             <div className='whiteBox'></div>
                         </div>
+                        <img src="https://pbs.twimg.com/media/FztcyXzaYAEs1VA?format=jpg&name=small" width={300} alt="" />
+
 
                     </div>
 
@@ -48,6 +50,7 @@ const PersonCard = ({ single, item }) => {
                     </div>
                 </div>
             </div>
+
         </div>
 
 
