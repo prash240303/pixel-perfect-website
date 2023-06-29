@@ -12,7 +12,7 @@ function Home() {
                 <span className="font-bold text-8xl leading-none">WOMEN RESEARCHERS IN ELECTRONICS AND COMPUTING</span>
               </div>
               <div className="flex justify-end self-stretch rounded-3xl gap-6">
-                <div className="left-side flex-grow flex pr-6 border border-r-black">
+                <div className="left-side flex-grow flex pr-6 border border-y-0 border-l-0 border-r-black">
                   <img src="./confImage.png" alt="" className="w-full h-full object-cover" />
                 </div>
                 <div className="right-side flex w-[350px]  flex-col justify-between">
