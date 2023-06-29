@@ -1,0 +1,13 @@
+.footer {
+  align-items: center;
+  background-color: #141414;
+  border: 1px none;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  justify-content: center;
+  min-width: 1280px;
+  padding: 24px;
+  position: relative;
+}
+
