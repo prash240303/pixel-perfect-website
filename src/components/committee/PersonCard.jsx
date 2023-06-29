@@ -17,7 +17,7 @@ const PersonCard = ({ single, item }) => {
                     </div>
                 </div>
                 <div className='flex flex-col items-start self-strech gap-6'>
-                    <div className='personImage' alt="image">
+                    <div className='personImage' alt="image" style={{backgroundImage: `url(${item.ImgLink})`}}>
                         <div className='whiteBoxUpper'>
                             <svg width="100" height="100">
                                 <mask id="curved-mask">
@@ -37,7 +37,7 @@ const PersonCard = ({ single, item }) => {
                             </div>
                             <div className='whiteBox'></div>
                         </div>
-                        <img src="https://pbs.twimg.com/media/FztcyXzaYAEs1VA?format=jpg&name=small" width={300} alt="" />
+                        
 
 
                     </div>
