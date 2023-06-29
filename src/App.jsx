@@ -7,7 +7,8 @@ import './styles/Cards.css'
 import Home from './Pages/Home'
 import Committee from './Pages/Committee'
 import ContactUs from './Pages/ContactUs'
-import { Routes, Route  } from 'react-router-dom'
+import { Routes, Route } from 'react-router-dom'
+import PageLayout from './components/PageLayout'
 function App() {
   const [loading, setLoading] = useState(false)
   const [data, setData] = useState([])
@@ -56,11 +57,12 @@ function App() {
     //   </p>
     // </>
 
-      <Routes>
-        <Route path='/' element={<Home />} />
-        <Route path='/committee' element={<Committee />} />
-        <Route path='/contact' element={<ContactUs />} />
-      </Routes>
+    <Routes>
+      <Route path='/' element={<PageLayout />} />
+      <Route index element={<Home />} />
+      <Route path='/committee' element={<Committee />} />
+      <Route path='/contact' element={<ContactUs />} />
+    </Routes>
   )
 }
 

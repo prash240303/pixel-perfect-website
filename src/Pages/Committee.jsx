@@ -1,6 +1,5 @@
 import { React, useEffect, useState } from 'react'
 import PersonCard from '../components/committee/PersonCard'
-import VerticalDivider from '../components/VerticalDivider'
 import fetchAPI from '../utils/fetchAPI'
 function Committee() {
   const [data, setData] = useState([])

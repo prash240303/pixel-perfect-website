@@ -1,40 +1,38 @@
 // eslint-disable-next-line no-unused-vars
 import React from "react";
-import Frame from "../Frame";
 import styled from "styled-components";
-import { InterMediumWhite18px, InterNormalWhite18px, InterNormalWhite137px } from "../../styledMixins";
 import "./Footer.css";
 
-function footer(props) {
-  const {
-    image1,
-    drBRAmbedkarNati1,
-    image17,
-    navigate,
-    place,
-    committee,
-    awards,
-    registrations,
-    contactUs1,
-    contactUs2,
-    drBRAmbedkarNati2,
-    telephone919888604632,
-    emailWrecNitjAcIn,
-    copyright,
-    allRightsReserved,
-    frame1Props,
-    frame2Props,
-  } = props;
+function Footer() {
+  // const {
+  //   image1,
+  //   drBRAmbedkarNati1,
+  //   image17,
+  //   navigate,
+  //   place,
+  //   committee,
+  //   awards,
+  //   registrations,
+  //   contactUs1,
+  //   contactUs2,
+  //   drBRAmbedkarNati2,
+  //   telephone919888604632,
+  //   emailWrecNitjAcIn,
+  //   copyright,
+  //   allRightsReserved,
+  //   frame1Props,
+  //   frame2Props,
+  // } = props;
 
   return (
     <div className="footer screen">
       <Frame24>
         <Frame1>
           <FlexRow>
-            <Image1 src={image1} alt="image 1" />
-            <DRBRAMBEDKARNATI>{drBRAmbedkarNati1}</DRBRAMBEDKARNATI>
+            <Image1 src="https://anima-uploads.s3.amazonaws.com/projects/6493d341b62dc1e09bdc3a80/releases/649d0d15fefcf687c34e49a6/img/image-1@2x.png" alt="image 1" />
+            <DRBRAMBEDKARNATI><React.Fragment>DR B R AMBEDKAR NATIONAL INSTITUTE OF<br /> TECHNOLOGY JALANDHAR -PUNJAB</React.Fragment></DRBRAMBEDKARNATI>
           </FlexRow>
-          <Image17 src={image17} alt="image 17" />
+          <Image17 src="https://anima-uploads.s3.amazonaws.com/projects/6493d341b62dc1e09bdc3a80/releases/649d0d15fefcf687c34e49a6/img/image-17@2x.png" alt="image 17" />
         </Frame1>
         <Line14
           src="https://anima-uploads.s3.amazonaws.com/projects/6493d341b62dc1e09bdc3a80/releases/649d0d15fefcf687c34e49a6/img/line-14.svg"
@@ -42,32 +40,32 @@ function footer(props) {
         />
         <Frame42>
           <Frame2>
-            <Navigate>{navigate}</Navigate>
+            <Navigate>NAVIGATE</Navigate>
             <Frame3>
               <Frame4>
-                <Place>{place}</Place>
+                <Place>Home</Place>
               </Frame4>
-              <Frame>{frame1Props.children}</Frame>
+              <Frame>Speakers</Frame>
               <Frame4>
-                <Place>{committee}</Place>
-              </Frame4>
-              <Frame4>
-                <Place>{awards}</Place>
-              </Frame4>
-              <Frame>{frame2Props.children}</Frame>
-              <Frame4>
-                <Place>{registrations}</Place>
+                <Place>Committee</Place>
               </Frame4>
               <Frame4>
-                <Place>{contactUs1}</Place>
+                <Place>Awards</Place>
+              </Frame4>
+              <Frame>Sponsors</Frame>
+              <Frame4>
+                <Place>Registrations</Place>
+              </Frame4>
+              <Frame4>
+                <Place>Contact us</Place>
               </Frame4>
             </Frame3>
           </Frame2>
           <Frame5>
-            <ContactUs>{contactUs2}</ContactUs>
-            <DrBRAmbedkarNati>{drBRAmbedkarNati2}</DrBRAmbedkarNati>
-            <Telephone919888604632>{telephone919888604632}</Telephone919888604632>
-            <Telephone919888604632>{emailWrecNitjAcIn}</Telephone919888604632>
+            <ContactUs>CONTACT US</ContactUs>
+            <DrBRAmbedkarNati><React.Fragment>Dr B R Ambedkar National Institute of Technology Jalandhar<br />G.T Road, Amritsar Bypass, Jalandhar, Punjab, India-144008</React.Fragment></DrBRAmbedkarNati>
+            <Telephone919888604632>Telephone  : +919888604632</Telephone919888604632>
+            <Telephone919888604632>Email: wrec@nitj.ac.in </Telephone919888604632>
           </Frame5>
         </Frame42>
       </Frame24>
@@ -79,8 +77,8 @@ function footer(props) {
         <Frame41>
           <Rectangle></Rectangle>
           <Frame40>
-            <Copyright>{copyright}</Copyright>
-            <AllRightsReserved>{allRightsReserved}</AllRightsReserved>
+            <Copyright>© Copyright</Copyright>
+            <AllRightsReserved>All Rights Reserved.</AllRightsReserved>
           </Frame40>
         </Frame41>
         <Rectangle></Rectangle>
@@ -304,4 +302,4 @@ const AllRightsReserved = styled.div`
   white-space: nowrap;
 `;
 
-export default footer;
+export default Footer;
