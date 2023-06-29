@@ -1,6 +1,5 @@
 import { useState } from 'react'
 import './styles/App.css'
-// import Card from './components/card'
 
 
 import Home from './Pages/Home'
