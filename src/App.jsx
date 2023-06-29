@@ -1,6 +1,5 @@
 import { useState } from 'react'
 import './styles/App.css'
-import './styles/Cards.css'
 // import Card from './components/card'
 
 
@@ -58,10 +57,11 @@ function App() {
     // </>
 
     <Routes>
-      <Route path='/' element={<PageLayout />} />
+      <Route path='/' element={<PageLayout />} >
       <Route index element={<Home />} />
       <Route path='/committee' element={<Committee />} />
       <Route path='/contact' element={<ContactUs />} />
+      </Route>
     </Routes>
   )
 }

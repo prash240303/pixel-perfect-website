@@ -1,40 +1,11 @@
 import React from 'react';
-import VerticalDivider from '../components/VerticalDivider';
 import './Home.css';
 
 function Home() {
   return (
     <>
-      <main className="view-container flex w-full">
-
-        <section className="hero-section flex flex-col gap-2 w-full items-start justify-start">
-          <div className='main__header flex items-center justify-center'>
-            <div className='main_div__header px-6 py-6'>
-              <img src="/image 1.png" alt="nitlogo" />
-              <div className='main__heading'>
-                <h1>DR B R AMBEDKAR NATIONAL institute of technology Jalandhar -punjab</h1>
-              </div>
-
-              <img src="/WIE_purple_pms526 1.png" alt="women" />
-
-            </div>
-          </div>
-          <div class="w-full flex items-center justify-center navbarcss">
-            <div class="flex flex-wrap p-8 flex-col md:flex-row items-center  justify-center">
-
-              <div class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center navbarLinks">
-                <a class="mr-10 hover:text-gray-900">Home</a>
-                <a class="mr-10 hover:text-gray-900">paper themes</a>
-                <a class="mr-10 hover:text-gray-900">speakers</a>
-                <a class="mr-10 hover:text-gray-900">committee</a>
-                <a class="mr-10 hover:text-gray-900">sponsors</a>
-                <a class="mr-10 hover:text-gray-900">awards</a>
-                <a class="mr-10 hover:text-gray-900">registrations</a>
-                <a class="mr-10 hover:text-gray-900">contact us</a>
-              </div>
-            </div>
-          </div>
-          <hr />
+      <main className="view-container flex mt-6 w-full">
+        <section className="hero-section flex flex-col gap-2 px-6 w-full items-start justify-start">
           <div className='main-wrapper flex flex-col gap-8 px-6 border-x border-black'>
             <div className="wrapper flex flex-col gap-6  ">
               <div className="flex flex-col gap-1">
@@ -73,12 +44,10 @@ function Home() {
                   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3405.6622730186928!2d75.53326897492673!3d31.395874574271303!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391a51d30c180edf%3A0x5b7633718d17ef33!2sDr%20B%20R%20Ambedkar%20National%20Institute%20of%20Technology%20Jalandhar!5e0!3m2!1sen!2sin!4v1688044920371!5m2!1sen!2sin" width="310" height="216" style={{ borderRadius: "20px" }} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" ></iframe>
                 </div>
                 <div class="flex items-center mt-5 gap-5">
-                <img src="/image 1.png" alt="nitlogo" />
-                <p class="footer_college">DR B R AMBEDKAR NATIONAL institute of
- technology Jalandhar -punjab</p></div>
+                  <img src="/image 1.png" alt="nitlogo" />
+                  <p class="footer_college">DR B R AMBEDKAR NATIONAL institute of technology Jalandhar -punjab</p></div>
               </div>
-              <div class="flex flex-grow flex border-r-2 flex-wrap md:pl-20 text-left">
-
+              <div class="flex flex-grow  border-r-2 flex-wrap md:pl-20 text-left">
                 <div class="w-1/2 px-4">
                   <h2 class="mb-3 footerLinkHeading">navigate</h2>
                   <nav class="list-none mb-10 footerLinks">
@@ -109,8 +78,7 @@ function Home() {
                   <h2 class="mb-3 footerLinkHeading">Contact us</h2>
                   <nav class="list-none mb-10 footerLinks">
                     <li class="mb-5">
-                      <a class="text-gray-600 hover:text-gray-500">Dr B R Ambedkar National Institute of Technology Jalandhar
-G.T Road, Amritsar Bypass, Jalandhar, Punjab, India-144008</a>
+                      <a class="text-gray-600 hover:text-gray-500">Dr B R Ambedkar National Institute of Technology Jalandhar G.T Road, Amritsar Bypass, Jalandhar, Punjab, India-144008</a>
                     </li>
                     <li class="mb-5">
                       <a class="text-gray-600 hover:text-gray-500">Telephone  : +919888604632</a>
@@ -118,7 +86,6 @@ G.T Road, Amritsar Bypass, Jalandhar, Punjab, India-144008</a>
                     <li>
                       <a class="text-gray-600 hover:text-gray-500">Email: wrec@nitj.ac.in</a>
                     </li>
-                  
                   </nav>
                 </div>
               </div>

@@ -1,14 +1,13 @@
 import React from 'react'
-import Home from '../Pages/Home'
 import { Outlet } from 'react-router-dom'
-import { Header } from './header/header'
-import Footer from './footer/footer'
+import Header from "./Header"
+import Navbar from './Navbar'
 function PageLayout() {
   return (
     <>
-      <Header/>
+      <Header />
+      <Navbar />
       <Outlet />
-      <footer/>
     </>
 
   )
