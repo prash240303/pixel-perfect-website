@@ -1,47 +1,4 @@
-.main__header {
 
-    align-self: stretch;
-    background: var(--dark, #141414);
-}
-
-.main_div__header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.main__heading {
-    width: 50%;
-
-}
-
-.main__heading h1 {
-    color: var(--white, #FFF);
-    text-align: center;
-    font-size: 30px;
-    font-family: Inter;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 32px;
-    text-transform: uppercase;
-}
-
-.navbarLinks a {
-    color: var(--grey, #7E7E7E);
-
-    /* body inter bold 18px */
-    font-size: 18px;
-    font-family: Inter;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    text-transform: uppercase;
-}
-
-.navbarcss {
-    border-bottom: 1px solid var(--grey, #494949);
-
-}
 
 .footer_college {
     color: var(--white, #FFF);
