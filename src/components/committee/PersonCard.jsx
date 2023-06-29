@@ -37,7 +37,7 @@ const PersonCard = ({ single, item }) => {
                             </div>
                             <div className='whiteBox'></div>
                         </div>
-                        <img src="https://pbs.twimg.com/media/FztcyXzaYAEs1VA?format=jpg&name=small" width={300} alt="" />
+                        
 
 
                     </div>
