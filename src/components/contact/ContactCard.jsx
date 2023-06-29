@@ -1,5 +1,4 @@
 import React from 'react'
-import HorizontalDivider from '../HorizontalDivider'
 
 function ContactCard({ item }) {
     return (

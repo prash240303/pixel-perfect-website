@@ -1,5 +1,4 @@
 import React from 'react';
-import VerticalDivider from '../components/VerticalDivider';
 
 function Home() {
   return (

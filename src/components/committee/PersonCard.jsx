@@ -1,5 +1,4 @@
 import React from 'react'
-import HorizontalDivider from '../HorizontalDivider'
 import './PersonCard.css'
 
 const PersonCard = ({ single, item }) => {

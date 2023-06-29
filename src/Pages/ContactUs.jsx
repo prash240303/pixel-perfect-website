@@ -1,7 +1,6 @@
 import { React, useEffect, useState } from 'react';
 import fetchAPI from '../utils/fetchAPI';
 import ContactCard from '../components/contact/ContactCard';
-import HorizontalDivider from '../components/HorizontalDivider';
 import '../styles/App.css';
 
 function ContactUs() {
@@ -37,7 +36,6 @@ function ContactUs() {
                 feature: 'Loading',
               }}
             />
-            <HorizontalDivider />
           </>
         )}
       </div>
