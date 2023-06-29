@@ -1,18 +1,19 @@
 import React from 'react'
 
-function ContactCard({ item }) {
+function ContactCard({item} ) {
+    console.log(item.name)
     return (
         <div className='flex self-stretch flex-row gap-6 px-6 border border-x-black'>
             <div className='w-[500px] flex flex-col gap-6'>
-                <div className='flex flex-col gap-3 items-start font-[inter]'>
-                    <div className='text-3xl font-bold'>{item.name}</div>
-                    <div className='text-lg font-semibold'>{item.designation}</div>
-                    <div className='text-lg font-semibold'>{item.institute}</div>
+                <div className='flex flex-col gap-3 items-start '>
+                    <div className='text-3xl font-bold'>{item.Name}</div>
+                    <div className='text-lg font-semibold'>{item.Designation}</div>
+                    <div className='text-lg font-semibold'>{item.Institute}</div>
                     <div className='text-lg font-semibold'>Phone No: {item.phone}</div>
                     <div className='text-lg font-semibold'>Email: {item.email}</div>
                     <div className='text-lg font-semibold'>Fax: {item.fax}</div>
                 </div>
-                <div className='flex flex-col items-start font-bold font-[inter] gap-3'>
+                <div className='flex flex-col items-start font-bold  gap-3'>
                     <div> PROFILE LINK</div>
                     <a href=""><img src="/pixel-white.svg" alt="" className='w-11' /></a>
                 </div>

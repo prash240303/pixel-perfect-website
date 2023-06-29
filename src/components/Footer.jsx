@@ -10,12 +10,12 @@ function Footer() {
                     </div>
                     <div class="flex items-center mt-5 gap-5">
                         <img src="/NITJLOGO.png" alt="nitlogo" className='w-[80px] ' />
-                        <p class=" text-white text-2xl font-[inter] font-bold uppercase mt-6">DR B R AMBEDKAR NATIONAL institute of technology Jalandhar -punjab</p></div>
+                        <p class=" text-white text-2xl   font-bold uppercase mt-6">DR B R AMBEDKAR NATIONAL institute of technology Jalandhar -punjab</p></div>
                 </div>
                 <div class="flex flex-grow   flex-wrap md:pl-20 text-left">
                     <div class="w-1/2 px-4">
                         <h2 class="mb-3  footerLinkHeading">navigate</h2>
-                        <nav class="list-none mb-10  flex flex-col gap-3   cursor-pointer footerLinks font-[inter] text-lg font-normal">
+                        <nav class="list-none mb-10  flex flex-col gap-3   cursor-pointer footerLinks   text-lg font-normal">
                             <li>
                                 <a class="text-gray-600 hover:text-gray-500 ">Home</a>
                             </li>

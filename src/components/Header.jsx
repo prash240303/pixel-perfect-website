@@ -7,7 +7,7 @@ function Header() {
                 
                 <img src="/NITJLOGO.png" alt="nitlogo" />
                 <div className='main__heading w-1/2  text-white '>
-                    <h1 className='text-white text-3xl font-[inter] font-bold text-center uppercase '>DR B R AMBEDKAR NATIONAL institute of technology Jalandhar -punjab</h1>
+                    <h1 className='text-white text-3xl  font-bold text-center uppercase '>DR B R AMBEDKAR NATIONAL institute of technology Jalandhar -punjab</h1>
                 </div>
                 <img src="/WIE_purple_pms526 1.png" alt="women" />
             </div>
