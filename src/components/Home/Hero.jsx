@@ -6,7 +6,7 @@ function Hero() {
     <div className='main-wrapper flex flex-col gap-8 px-6 border-x border-black'>
       <div className="wrapper flex flex-col gap-6  ">
         <div className="flex flex-col gap-1">
-          <span className="text-8xl leading-none font-custom font-bold">WOMEN RESEARCHERS IN ELECTRONICS AND COMPUTING</span>
+          <span className="text-8xl leading-none font-custom font-bold ">WOMEN RESEARCHERS IN ELECTRONICS AND COMPUTING</span>
         </div>
         <div className="flex justify-end self-stretch rounded-3xl gap-6">
           <div className="left-side flex-grow flex pr-6 border border-y-0 border-l-0 border-r-black">

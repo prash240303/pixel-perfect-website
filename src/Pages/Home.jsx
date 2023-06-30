@@ -5,6 +5,7 @@ import Announcement from '../components/Home/Announcement';
 import About from '../components/Home/About';
 import Dates from '../components/Home/Dates';
 import Sponsers from '../components/Home/Sponsers';
+import Prizes from '../components/Home/Prizes';
 
 function Home() {
   return (
@@ -15,6 +16,7 @@ function Home() {
        <About/>
        <Dates/>
        <Sponsers/>  
+       <Prizes/>
       </main>
     </>
   );
