@@ -26,7 +26,7 @@ function Hero() {
               <a href="" target='_blank'>  <img src="./facebook.svg" className='w-12' alt="" /></a>
               <a href="" target='_blank'>  <img src="./youtube.svg" className='w-12' alt="" /></a>
             </div>
-            <div className='button  flex  font-bold text-xl px-6 py-6 justify-center items-center rounded-xl bg-black text-white'>Register Now</div>
+            <div className='button  flex  font-bold text-xl px-6 py-6 justify-center items-center rounded-2xl bg-black text-white'>Register Now</div>
           </div>
         </div>
       </div>
