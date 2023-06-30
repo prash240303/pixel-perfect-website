@@ -14,7 +14,6 @@ function Committee() {
       <div className='flex flex-col w-full items-start gap-6 p-6 justify-start  border border-blue-400'>
         <div className='flex flex-row px-6 items-start gap-6  border border-x-black border-y-0'>
           <div className='flex  w-fill  flex-col justify-center items-start  border border-orange-300 '>
-
             <div className='text-[4rem] w-[400px] font-custom font-bold'> ORGANIZING COMMITTEE</div>
           </div>
           {(
