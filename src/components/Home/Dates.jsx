@@ -1,7 +1,7 @@
 import React from 'react'
 function Dates() {
     return (
-        <section className="about-section  flex px-6 py-6 pb-6  w-full items-start justify-start">
+        <section className="dates-section  flex px-6 py-6 pb-6  w-full items-start justify-start">
             <div className='main-wrapper w-full flex flex-row  gap-6 justify-between px-6 border-x border-black'>
                 <div className=' pr-6 w-full  border-r border-black text-7xl '>
                     <div className='font-custom font-bold w-[380px]'>IMPORTANT DATES</div></div>
