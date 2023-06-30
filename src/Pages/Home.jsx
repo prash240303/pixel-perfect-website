@@ -3,6 +3,7 @@ import './Home.css';
 import Hero from '../components/Home/Hero';
 import Announcement from '../components/Home/Announcement';
 import About from '../components/Home/About';
+import Dates from '../components/Home/Dates';
 
 function Home() {
   return (
@@ -11,6 +12,7 @@ function Home() {
        <Hero/>
        <Announcement/>
        <About/>
+       <Dates/>
       </main>
     </>
   );

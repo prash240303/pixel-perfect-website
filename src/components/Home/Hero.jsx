@@ -2,7 +2,7 @@ import React from 'react'
 
 function Hero() {
   return (
-    <section className="hero-section flex flex-col gap-2 px-6 pb-6 w-full items-start justify-start">
+    <section className="hero-section flex px-6 pb-6 w-full items-start justify-start">
     <div className='main-wrapper flex flex-col gap-8 px-6 border-x border-black'>
       <div className="wrapper flex flex-col gap-6  ">
         <div className="flex flex-col gap-1">
