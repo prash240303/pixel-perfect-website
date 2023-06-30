@@ -29,6 +29,7 @@ function Committee() {
                     single
                     item={{
                       id: 'default',
+                      Type: 'default',
                       Subtype: 'Loading',
                       Name: 'Loading',
                       Designation: 'Loading',

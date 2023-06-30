@@ -7,7 +7,7 @@ const PersonCard = ({ single, item }) => {
             <div className='flex flex-row  h-fill gap-6 border-b pb-6 border-black'>
                 <div className='flex flex-col  w-[430px] gap-5 items-start  justify-items-stretch ' >
                     <div className='flex flex-col items-start '>
-                        <div className='flex flex-col  justify-center items-stretch font-bold text-[56px] leading-[4.5rem]'>{item.Type}</div>
+                        <div className='flex flex-col  justify-center items-stretch font-bold font-custom text-[56px] leading-[4.5rem]'>{item.Type}</div>
                         <div className='flex flex-col justify-center font-bold   text-lg '>{item.Subtype}</div>
                     </div>
                     <div className='flex flex-col items-start'>
