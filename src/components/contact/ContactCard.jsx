@@ -1,41 +1,49 @@
 import React from 'react'
 
-function ContactCard({item} ) {
+function ContactCard({ item }) {
     console.log(item.name)
     return (
-        <div className='flex self-stretch flex-row gap-6 px-6 border border-x-black'>
-            <div className='w-[500px] flex flex-col gap-6'>
-                <div className='flex flex-col gap-3 items-start '>
-                    <div className='text-3xl font-bold'>{item.Name}</div>
-                    <div className='text-lg font-semibold'>{item.Designation}</div>
-                    <div className='text-lg font-semibold'>{item.Institute}</div>
-                    <div className='text-lg font-semibold'>Phone No: {item.phone}</div>
-                    <div className='text-lg font-semibold'>Email: {item.email}</div>
-                    <div className='text-lg font-semibold'>Fax: {item.fax}</div>
-                </div>
-                <div className='flex flex-col items-start font-bold  gap-3'>
-                    <div> PROFILE LINK</div>
-                    <a href=""><img src="/pixel-white.svg" alt="" className='w-11' /></a>
-                </div>
-            </div>
-
-            <div className='flex self-stretch'>
-                <div >
-                    <img src={item.imgLink} alt=" " className='border border-blue-300  w-[450px] object-cover' />
+        <div className='flex  w-full flex-row gap-6 border-b border-black '>
+            <div className=' w-full flex flex-col gap-6'>
+                <div className='flex flex-col  items-start  '>
+                    <div className='text-4xl font-bold leading-normal'>{item.name}</div>
+                    <div className='text-xl font-semibold  leading-normal'>{item.designation}</div>
+                    <div className='text-xl font-semibold  leading-normal'>{item.institute}</div>
+                    <div className='text-xl font-normal mt-3 leading-normal'>Phone No : <span className='font-semibold'> {item.phone}</span></div>
+                    <div className='text-xl font-normal  leading-normal'>Email : <span className='font-semibold'> {item.email}</span></div>
+                    <div className='text-xl font-normal  leading-normal'>Fax :  <span className='font-semibold'> {item.fax} </span></div>
+                    <div className='flex flex-row  mt-6 justify-between gap-6 mb-6 font-semibold items-start'>
+                        <a href={item.profileLink} className='font-bold text-xl'>PROFILE LINK</a>
+                    </div>
                 </div>
             </div>
 
-            <svg width="0" height="0" xmlns="http://www.w3.org/2000/svg">
-                <defs>
-                    <clipPath id="myClip">
-                        <path fillRule="evenodd" clipRule="evenodd"
-                            d="M20 0C8.9543 0 0 8.95432 0 20V140.744C0 151.79 8.95431 160.744 20 160.744H144.67C149.602 160.744 153.6 156.746 153.6 151.814V131.274C153.6 126.342 157.598 122.344 162.53 122.344H183.07C188.002 122.344 192 118.346 192 113.414V20C192 8.95431 183.046 0 172 0H20Z"
-                            fill="#C3C3C3" />
-                    </clipPath>
-                </defs>
-            </svg>
+            <div className='flex flex-col items-start  mb-6 w-full gap-6'>
+                <div className='personImage  w-full rounded-2xl' alt="image" style={{ backgroundImage: `url(${item.imgLink})` }}>
+                    <div className='whiteBoxUpper'>
+                        <svg width="100" height="100">
+                            <mask id="curved-mask">
+                                <rect x="0" y="0" width="100%" height="100%" fill="black" />
+                                <circle cx="50%" cy="50%" r="50%" fill="white" />
+                            </mask>
+                        </svg>
+                    </div>
+                    <div class='flex items-end'>
+                        <div className='whiteBoxLower'>
+                            <svg width="100" height="100">
+                                <mask id="curved-mask">
+                                    <rect x="0" y="0" width="100%" height="100%" fill="black" />
+                                    <circle cx="50%" cy="50%" r="50%" fill="white" />
+                                </mask>
+                            </svg>
+                        </div>
+                        <div className='whiteBox'></div>
+                    </div>
+                </div>
+            </div>
         </div>
     )
+
 }
 
 export default ContactCard;

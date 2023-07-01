@@ -12,34 +12,40 @@ function ContactUs() {
   }, []);
 
   return (
-    <div className=' p-0 m-0 flex items-center self-stretch'>
-      <div className='flex flex-col gap-6 px-6 py-6 border self-stretch border-blue-400'>
-        {data.length > 0 ? (
-          data.map((item) => {
-            return <ContactCard key={item.id} item={item} />;
-          })
-        ) : (
-          <>
-            <ContactCard
-              single
-              item={{
-                id: 'default',
-                title: 'Loading',
-                Name: 'Loading',
-                Designation: 'Loading',
-                imgLink: 'Loading',
-                Institute: 'Loading',
-                ProfileLink: 'Loading',
-                phone: 'Loading',
-                email: 'Loading',
-                fax: 'Loading',
-                feature: 'Loading',
-              }}
-            />
-          </>
-        )}
+    <main className="view-container flex  my-6 px-6 w-full">
+      <div className='flex flex-row px-6 items-start justify-between w-full gap-6  border border-x-black border-y-0'>
+        <div className='flex   flex-col  items-start   text-[4rem] w-[400px] font-custom font-bold '>
+          CONTACT US
+        </div>
+        <div className='flex flex-col w-full px-6 border-l border-black'>
+          {(
+            <div id='cards-wrapper' className='flex w-full  item flex-col gap-6  items-start  align-top '>
+              {data.length > 0 ? (
+                data.map((item) => {
+                  return <ContactCard key={item.id} item={item} />
+                })
+              ) : (
+                <>
+                  <ContactCard
+                    single
+                    item={{
+                      id: 'default',
+                      Type: 'default',
+                      Subtype: 'Loading',
+                      name: 'Loading',
+                      Designation: 'Loading',
+                      imgLink: 'Loading',
+                      Institute: 'Loading',
+                      ProfileLink: 'Loading',
+                    }}
+                  />
+                </>
+              )}
+            </div>
+          )}
+        </div>
       </div>
-    </div>
+    </main>
   );
 }
 
