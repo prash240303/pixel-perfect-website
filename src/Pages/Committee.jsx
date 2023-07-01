@@ -11,13 +11,14 @@ function Committee() {
   console.log(data)
   return (
     <>
-      <div className='flex flex-col w-full items-start gap-6 p-6 justify-start  border border-blue-400'>
-        <div className='flex flex-row px-6 items-start gap-6  border border-x-black border-y-0'>
-          <div className='flex  w-fill  flex-col justify-center items-start  border border-orange-300 '>
-            <div className='text-[4rem] w-[400px] font-custom font-bold'> ORGANIZING COMMITTEE</div>
+      <main className="view-container flex  my-6 px-6 w-full">
+        <div className='flex flex-row px-6 items-start justify-between w-full gap-6  border border-x-black border-y-0'>
+          <div className='flex   flex-col  items-start   text-[4rem] w-[400px] font-custom font-bold '>
+            ORGANIZING COMMITTEE
           </div>
-          {(
-            <div id='cards-wrapper' className='flex  item flex-col gap-6  items-start  align-top '>
+          <div className='flex flex-col w-full px-6 border-l border-black'>
+           {(
+            <div id='cards-wrapper' className='flex w-full  item flex-col gap-6  items-start  align-top '>
               {data.length > 0 ? (
                 data.map((item) => {
                   return <PersonCard key={item.id} item={item} />
@@ -40,9 +41,10 @@ function Committee() {
                 </>
               )}
             </div>
-          )}
+          )} 
+          </div>
         </div>
-      </div>
+      </main>
     </>
   )
 }
