@@ -17,35 +17,46 @@ const Hero = ({ data, image }) => {
             </div>
             <div className="right-side flex w-[350px] flex-col justify-between">
               <div className="flex flex-col gap-2 py-6 border-b border-black font-bold text-3xl">
-                <span>
-                  {new Date(data.confStartDate).toLocaleDateString('en-US', {
-                    month: 'short',
-                    day: '2-digit',
-                  })}-{new Date(data.confEndDate).toLocaleDateString('en-US', {
-                    month: 'short',
-                    day: '2-digit',
-                    year: 'numeric',
-                  })}
+                <span className="text-6xl md:text-8xl  font-custom font-bold uppercase">{data.confName}
                 </span>
-                <span>Offline</span>
               </div>
-              <div className='py-6 border-b border-black'>
-                <img src={data.logo} alt="" className='w-full' />
-              </div>
-              <div className='socials flex flex-row py-6 justify-between items-center'>
-                <a href={data.twitterLink} target='_blank'> <img src="./twitter.svg" className='w-12' alt="" /> </a>
-                <a href={data.instaLink} target='_blank'>  <img src="./instagram.svg" className='w-12' alt="" /></a>
-                <a href={data.facebookLink} target='_blank'>  <img src="./facebook.svg" className='w-12' alt="" /></a>
-                <a href={data.youtubeLink} target='_blank'>  <img src="./youtube.svg" className='w-12' alt="" /></a>
-              </div>
-              <div className='button flex font-bold text-xl px-6 py-6 justify-center items-center rounded-2xl bg-black text-white'>
-                Register Now
+              <div className="flex flex-col sm:flex-col md:flex-row justify-end self-stretch rounded-3xl gap-6">
+                <div className="left-side sm:w-full  md:w-2/3 flex-grow flex pr-6 border border-y-0 border-l-0 border-r-black">
+                  <img src={data.logo} alt="conf-image" className="w-full h-full object-cover" />
+                </div>
+                <div className="right-side sm:w-full md:w-1/3 flex flex-col justify-between">
+                  <div className="flex flex-col gap-2 py-6 border-b border-black font-bold  text-3xl">
+                    <span>
+                      {new Date(data.confStartDate).toLocaleDateString('en-US', {
+                        month: 'short',
+                        day: '2-digit',
+                      })}-{new Date(data.confEndDate).toLocaleDateString('en-US', {
+                        month: 'short',
+                        day: '2-digit',
+                        year: 'numeric',
+                      })}
+                    </span>
+                    <span>Offline</span>
+                  </div>
+                  <div className='py-6 border-b border-black'>
+                    <img src={data.logo} alt="" className='w-full' />
+                  </div>
+                  <div className='socials flex flex-row py-6 justify-between items-center'>
+                    <a href={data.twitterLink} target='_blank'> <img src="./twitter.svg" className='w-12' alt="" /> </a>
+                    <a href={data.instaLink} target='_blank'>  <img src="./instagram.svg" className='w-12' alt="" /></a>
+                    <a href={data.facebookLink} target='_blank'>  <img src="./facebook.svg" className='w-12' alt="" /></a>
+                    <a href={data.youtubeLink} target='_blank'>  <img src="./youtube.svg" className='w-12' alt="" /></a>
+                  </div>
+                  <div className='button flex font-bold text-xl px-6 py-6 justify-center items-center rounded-2xl bg-black text-white'>
+                    Register Now
+                  </div>
+                </div>
               </div>
             </div>
+            <div className='content-wrapper flex flex-col self-stretch font-normal text-xl'>
+              {data.aboutConf}
+            </div>
           </div>
-        </div>
-        <div className='content-wrapper flex flex-col self-stretch font-normal text-xl'>
-          {data.aboutConf}
         </div>
       </div>
     </section>
