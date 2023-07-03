@@ -17,7 +17,7 @@ function Sponsers({ data }) {
         <div className="border-r w-full md:w-2/5 border-black">
           <div className="font-custom font-bold text-7xl leading-normal">SPONSORS</div>
         </div>
-        <div className="flex sponsers-list w-full flex-col px-6 gap-6">
+        <div className="flex sponsers-list w-full flex-col md:px-6 gap-6">
           {Object.entries(groupedSponsors).map(([type, sponsors]) => (
             <div className="flex gap-6 w-full mb-6 flex-col" key={type}>
               <div className="font-custom font-bold text-5xl mb-4">

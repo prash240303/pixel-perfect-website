@@ -30,7 +30,7 @@ const Hero = ({ data }) => {
               <div className='py-6 border-b border-black'>
                 <img src={data.logo} alt="" className='w-full' />
               </div>
-              <div className='socials flex flex-row  justify-between items-center'>
+              <div className='socials flex py-5 flex-row  justify-between items-center'>
                 <a href={data.twitterLink} target='_blank'> <img src="./twitter.svg" className='w-12' alt="" /> </a>
                 <a href={data.instaLink} target='_blank'>  <img src="./instagram.svg" className='w-12' alt="" /></a>
                 <a href={data.facebookLink} target='_blank'>  <img src="./facebook.svg" className='w-12' alt="" /></a>
