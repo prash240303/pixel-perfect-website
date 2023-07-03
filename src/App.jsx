@@ -7,6 +7,8 @@ import Committee from './Pages/Committee'
 import ContactUs from './Pages/ContactUs'
 import { Routes, Route } from 'react-router-dom'
 import PageLayout from './components/PageLayout'
+import Speakers from './Pages/Speakers'
+import Biocard from './components/Speakers/Biocard'
 function App() {
   const [loading, setLoading] = useState(false)
   const [data, setData] = useState([])
@@ -60,6 +62,8 @@ function App() {
       <Route index element={<Home />} />
       <Route path='/committee' element={<Committee />} />
       <Route path='/contact' element={<ContactUs />} />
+      <Route path='/speaker' element={<Speakers />} />
+      <Route path='/Bio' element={<Biocard />} />
       </Route>
     </Routes>
   )

@@ -2,7 +2,7 @@ import React from 'react'
 
 function Footer() {
     return (
-        <footer className="w-full px-6 bg-[#141414]">
+        <footer className="w-full px-6 bg-[#141414] overflow-hidden">
             <div className="px-5 py-10 border-x  mx-auto flex md:items-center md:flex-row md:flex-nowrap flex-wrap flex-col">
                 <div className="border-r w-1/2 px-5  flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
                     <div>
@@ -16,40 +16,26 @@ function Footer() {
                     <div className="w-1/2 px-4">
                         <h2 className="mb-3  footerLinkHeading">navigate</h2>
                         <nav className="list-none mb-10  flex flex-col gap-3   cursor-pointer footerLinks   text-lg font-normal">
-                            <li>
-                                <a className="text-gray-600 hover:text-gray-500 ">Home</a>
-                            </li>
-                            <li>
-                                <a className="text-gray-600 hover:text-gray-500 ">Speakers</a>
-                            </li>
-                            <li>
-                                <a className="text-gray-600 hover:text-gray-500">Commitee</a>
-                            </li>
-                            <li>
-                                <a className="text-gray-600 hover:text-gray-500">Awards</a>
-                            </li>
-                            <li>
-                                <a className="text-gray-600 hover:text-gray-500">Sponsors</a>
-                            </li>
-                            <li>
-                                <a className="text-gray-600 hover:text-gray-500">Registrations</a>
-                            </li>
-                            <li>
-                                <a className="text-gray-600 hover:text-gray-500">Contact us</a>
-                            </li>
+                                <a href='/' className="hover:text-gray-500 ">Home</a>
+                                <a href="/speaker" className="hover:text-gray-500 ">Speakers</a>
+                                <a href="/committee" className="hover:text-gray-500">committee</a>
+                                <a href="/" className="hover:text-gray-500">Awards</a>
+                                <a href="/" className=" hover:text-gray-500">Sponsors</a>
+                                <a href="/" className=" hover:text-gray-500">Registrations</a>
+                                <a href="/contact" className=" hover:text-gray-500">Contact us</a>
                         </nav>
                     </div>
                     <div className=" w-1/2 px-4">
                         <h2 className="mb-3 footerLinkHeading">Contact us</h2>
                         <nav className="list-none mb-10 footerLinks">
                             <li className="mb-5">
-                                <a className="text-gray-600 ">Dr B R Ambedkar National Institute of Technology Jalandhar G.T Road, Amritsar Bypass, Jalandhar, Punjab, India-144008</a>
+                                <a href="" className="  ">Dr B R Ambedkar National Institute of Technology Jalandhar G.T Road, Amritsar Bypass, Jalandhar, Punjab, India-144008</a>
                             </li>
-                            <li className="mb-5">
-                                <a className="text-gray-600 ">Telephone  : +919888604632</a>
+                            <li className="mb-5 text-white">
+                                Telephone  : +919888604632
                             </li>
                             <li>
-                                <a className="text-gray-600 ">Email: wrec@nitj.ac.in</a>
+                                <a href="mailto:wrec@nitj.ac.in" className="hover:text-gray-500" >Email: wrec@nitj.ac.in</a>
                             </li>
                         </nav>
                     </div>

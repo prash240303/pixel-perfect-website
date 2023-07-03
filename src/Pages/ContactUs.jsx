@@ -17,7 +17,7 @@ function ContactUs() {
         <div className='flex   flex-col  items-start   text-[4rem] w-[400px] font-custom font-bold '>
           CONTACT US
         </div>
-        <div className='flex flex-col w-full px-6 border-l border-black'>
+        <div className='flex flex-col w-full px-6 overflow-hidden border-l border-black'>
           {(
             <div id='cards-wrapper' className='flex w-full  item flex-col gap-6  items-start  align-top '>
               {data.length > 0 ? (

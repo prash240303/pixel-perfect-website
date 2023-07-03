@@ -1,10 +1,6 @@
-const Hero = ({ single, item }) => {
-  console.log("datain hero", item.id);
+const Hero = () => {
+  // console.log("datain hero", item.id);
 
-  // Check if item is empty or loading
-  if (!item || Object.keys(item).length === 0) {
-    return <div>Loading...</div>;
-  }
 
   // Render the Hero component with the fetched data
   return (
@@ -13,7 +9,7 @@ const Hero = ({ single, item }) => {
 <div className='main-wrapper flex flex-col gap-8 px-6 border-x border-black'>
   <div className="wrapper flex flex-col gap-6  ">
     <div className="flex flex-col gap-1">
-      <span className="text-8xl leading-none font-custom font-bold ">{item.confName}</span>
+      <span className="text-8xl leading-none font-custom font-bold uppercase">Wommen confrence</span>
     </div>
     <div className="flex justify-end self-stretch rounded-3xl gap-6">
       <div className="left-side flex-grow flex pr-6 border border-y-0 border-l-0 border-r-black">

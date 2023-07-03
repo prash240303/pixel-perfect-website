@@ -19,7 +19,7 @@ function Home() {
   return (
     <>
       <main className="view-container flex flex-col mt-6 w-full">
-        {(
+        {/* {(
           <div id='wrapper'>
             {data.length > 0 ? (
               data.map((item) => {
@@ -42,7 +42,8 @@ function Home() {
               </>
             )}
           </div>
-        )}
+        )} */}
+        <Hero/>
         <Announcement />
         <About />
         <Dates />

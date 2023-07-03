@@ -18,7 +18,7 @@
   font-family: "Inter", system-ui, Avenir, Helvetica, Arial, sans-serif;
 }
 
-:root::-webkit-scrollbar {
+/* :root::-webkit-scrollbar {
   width: 12px;
   background: #1e1e1e;
 }
@@ -27,7 +27,7 @@
   border-radius: 10px;
   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
   background-color: #555;
-}
+} */
 
 body {
   margin: 0;
