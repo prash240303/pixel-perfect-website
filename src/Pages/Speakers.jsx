@@ -4,9 +4,10 @@ import fetchAPI from '../utils/fetchAPI'
 function Speakers() {
     const [data, setData] = useState([])
     const [loading, setLoading] = useState(false)
-
+    const endpoint = "/speakers/conference/647f315f62cdb3a26174fc38"
     useEffect(() => {
-        fetchAPI(setData, setLoading);
+        fetchAPI(setData, setLoading, endpoint);
+
     }, []);
     console.log(data)
     return (
@@ -31,7 +32,7 @@ function Speakers() {
                                                 Subtype: 'Loading',
                                                 Name: 'Loading',
                                                 Designation: 'Loading',
-                                                imgLink: 'Loading',
+                                                ImgLink: 'Loading',
                                                 Institute: 'Loading',
                                                 ProfileLink: 'Loading',
                                             }}

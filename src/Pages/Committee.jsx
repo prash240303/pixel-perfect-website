@@ -4,9 +4,9 @@ import fetchAPI from '../utils/fetchAPI'
 function Committee() {
   const [data, setData] = useState([])
   const [loading, setLoading] = useState(false)
-
+  const endPoint = '/committees/conference/647f315f62cdb3a26174fc38'
   useEffect(() => {
-    fetchAPI(setData, setLoading);
+    fetchAPI(setData, setLoading, endPoint);
   }, []);
   console.log(data)
   return (

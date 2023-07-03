@@ -6,9 +6,10 @@ import '../styles/App.css';
 function ContactUs() {
   const [data, setData] = useState([]);
   const [loading, setLoading] = useState(false);
+  const endPoint = "/contacts/647f315f62cdb3a26174fc38"
 
   useEffect(() => {
-    fetchAPI(setData, setLoading);
+    fetchAPI(setData, setLoading, endPoint);
   }, []);
 
   return (

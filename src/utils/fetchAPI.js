@@ -1,7 +1,7 @@
-export default function fetchAPI(setData, setLoading) {
+export default function fetchAPI(setData, setLoading, endPoint) {
   setLoading(true)
   setData([])
-  fetch(import.meta.env.VITE_API_URL + '/contacts/647f315f62cdb3a26174fc38', {
+  fetch(import.meta.env.VITE_API_URL + `${endPoint}`, {
     method: 'GET',
     headers: {
       'Content-Type': 'application/json',
