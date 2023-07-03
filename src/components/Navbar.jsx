@@ -86,20 +86,59 @@ function Navbaar() {
     </ul>
   );
   return (
-    <div className="w-full flex items-center justify-center border-b px-6 pb-3 border-black">
-            <div className="flex w-full py-3 flex-col md:flex-row items-center border-x border-black  justify-center">
-              <div className="md:ml-auto md:mr-auto flex flex-wrap items-center  pt-3 font-bold text-lg uppercase text-black cursor-pointer justify-center navbarLinks">
-                <Link  to="/" className="mr-10  hover:text-[#7E7E7E] ">Home</Link>
-                <Link to="/" className="mr-10  hover:text-[#7E7E7E] ">paper themes</Link>
-                <Link  to="/speaker" className="mr-10  hover:text-[#7E7E7E] ">speakers</Link>
-                <Link to="/committee" className="mr-10  hover:text-[#7E7E7E] ">committee</Link>
-                <Link  to="/" className="mr-10  hover:text-[#7E7E7E] ">sponsors</Link>
-                <Link  to="/" className="mr-10  hover:text-[#7E7E7E] ">awards</Link>
-                <Link  to="/" className="mr-10  hover:text-[#7E7E7E] ">registrations</Link>
-                <Link  to="/contact" className="mr-10  hover:text-[#7E7E7E] ">contact us</Link>
-              </div>
-            </div>
-          </div>
+    <>
+    <Navbar className="sticky top z-10 h-max max-w-full rounded-none py-2 px-4 lg:px-4 lg:py-4">
+      <div className="flex items-center justify-end text-blue-gray-900">
+        
+        <div className="flex items-center gap-4">
+          <div className="mr-4 hidden lg:block">{navList}</div>
+          
+          <IconButton
+            variant="text"
+            className="ml-auto h-6 w-6 color text-inherit text-black hover:bg-transparent focus:bg-transparent active:bg-transparent lg:hidden"
+            color='black'
+            ripple={false}
+            onClick={() => setOpenNav(!openNav)}
+          >
+            {openNav ? (
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                className="h-6 w-6"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                strokeWidth={2}
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M6 18L18 6M6 6l12 12"
+                />
+              </svg>
+            ) : (
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-6 w-6"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth={2}
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M4 6h16M4 12h16M4 18h16"
+                />
+              </svg>
+            )}
+          </IconButton>
+        </div>
+      </div>
+      <MobileNav open={openNav}>
+        {navList}
+        
+      </MobileNav>
+    </Navbar>
+    </>
   )
 }
 
