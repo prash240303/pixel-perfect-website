@@ -7,7 +7,7 @@ function Dates({ data }) {
         <div className="border-r w-full md:w-2/5 border-black">
           <div className="font-custom font-bold text-7xl">IMPORTANT DATES</div>
         </div>
-        <div className="flex dates-list w-full flex-col px-6 gap-6">
+        <div className="flex dates-list w-full flex-col md:px-6 gap-6">
           {data.map((date) => (
             <div
               className={`flex w-full justify-between border-b border-black pb-6 ${
@@ -15,7 +15,7 @@ function Dates({ data }) {
               }`}
               key={date.id}
             >
-              <div className="date font-custom font-bold w-full text-5xl">
+              <div className="date font-custom font-bold w-full text-4xl">
                 {date.newDate ? (
                   <>
                     <strike>
@@ -40,7 +40,7 @@ function Dates({ data }) {
                   })
                 )}
               </div>
-              <div className="flex w-full event font-bold text-4xl">{date.title}</div>
+              <div className="flex w-full event font-bold text-3xl">{date.title}</div>
             </div>
           ))}
         </div>
