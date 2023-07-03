@@ -29,7 +29,7 @@ function Sponsers({ data }) {
                     src={sponsor.logo}
                     alt={sponsor.name}
                     key={sponsor.id}
-                    className="sponsor-logo w-[320px]"
+                    className="sponsor-logo w-[250px]"
                   />
                 ))}
               </div>

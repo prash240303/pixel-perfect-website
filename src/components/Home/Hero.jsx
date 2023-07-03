@@ -9,10 +9,10 @@ const Hero = ({ data }) => {
             </span>
           </div>
           <div className="flex justify-end self-stretch rounded-3xl gap-6">
-            <div className="left-side flex-grow flex pr-6 border border-y-0 border-l-0 border-r-black">
+            <div className="left-side w-full  md:w-2/3 flex-grow flex pr-6 border border-y-0 border-l-0 border-r-black">
               <img src= {data.logo} alt="conf-image" className="w-full h-full object-cover" />
             </div>
-            <div className="right-side flex w-[350px]  flex-col justify-between">
+            <div className="right-side w-full md:w-1/3 flex w-[350px]  flex-col justify-between">
               <div className="flex flex-col gap-2 py-6 border-b border-black font-bold  text-3xl">
                 <span>
                   {new Date(data.confStartDate).toLocaleDateString('en-US', {
