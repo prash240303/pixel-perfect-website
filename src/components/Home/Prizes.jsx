@@ -8,7 +8,7 @@ function Prizes() {
                     <div className='font-custom font-bold leading-normal'>PRIZES</div>
                     <div className='font-normal text-lg'>Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus..</div>
                 </div>
-                <div className='flex gap-12 justify-between'>
+                <div className='flex flex-col flex-wrap md:flex-row gap-12 justify-center items-center'>
 
                     <div>
                         <svg width="360" height="501" viewBox="0 0 360 501" fill="none" xmlns="http://www.w3.org/2000/svg">
