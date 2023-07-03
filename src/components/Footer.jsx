@@ -48,16 +48,16 @@ function Footer() {
                     </p>
                     <span className="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start cursor-pointer">
                         <a className="text-gray-500 " href='' target="_blank">
-                            <img src="./instagram-icon.svg" className='w-6' alt="" />
+                            <img src="./Icons/instagram-icon.svg" className='w-6' alt="" />
                         </a>
                         <a className="ml-3 text-gray-500" href='' target="_blank">
-                            <img src="./twitter-icon.svg" alt="" className='w-6' />
+                            <img src="./Icons/twitter-icon.svg" alt="" className='w-6' />
                         </a>
                         <a className="ml-3 text-gray-500" href='' target="_blank" >
-                            <img src="./facebook-icon.svg" className='w-6' alt="" />
+                            <img src="./Icons/facebook-icon.svg" className='w-6' alt="" />
                         </a>
                         <a className="ml-3 text-gray-500" href='' target="_blank" >
-                            <img src="./linkedin-icon.svg" alt="" className='w-6' />
+                            <img src="./Icons/linkedin-icon.svg" alt="" className='w-6' />
                         </a>
                     </span>
                 </div>
