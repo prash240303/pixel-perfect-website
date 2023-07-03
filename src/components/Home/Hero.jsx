@@ -5,14 +5,14 @@ const Hero = ({ data }) => {
       <div className='main-wrapper flex flex-col gap-8 px-6 border-x border-black'>
         <div className="wrapper flex flex-col gap-6  ">
           <div className="flex flex-col gap-1">
-            <span className="text-8xl leading-none font-custom font-bold uppercase">{data.confName}
+            <span className="text-6xl md:text-8xl  font-custom font-bold uppercase">{data.confName}
             </span>
           </div>
-          <div className="flex justify-end self-stretch rounded-3xl gap-6">
-            <div className="left-side flex-grow flex pr-6 border border-y-0 border-l-0 border-r-black">
+          <div className="flex flex-col sm:flex-col md:flex-row justify-end self-stretch rounded-3xl gap-6">
+            <div className="left-side sm:w-full  md:w-2/3 flex-grow flex pr-6 border border-y-0 border-l-0 border-r-black">
               <img src= {data.logo} alt="conf-image" className="w-full h-full object-cover" />
             </div>
-            <div className="right-side flex w-[350px]  flex-col justify-between">
+            <div className="right-side sm:w-full md:w-1/3 flex flex-col justify-between">
               <div className="flex flex-col gap-2 py-6 border-b border-black font-bold  text-3xl">
                 <span>
                   {new Date(data.confStartDate).toLocaleDateString('en-US', {
