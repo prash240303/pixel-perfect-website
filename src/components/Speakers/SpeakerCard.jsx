@@ -2,7 +2,7 @@ import React from 'react'
 
 const SpeakerCard = ({ item }) => {
   return (
-    <div className='flex  w-full flex-row pb-6 border-b border-black justify-between '>
+    <div className='flex  w-full flex-col md:flex-row pb-6 border-b border-black justify-between '>
       <div className='flex w-full flex-col  items-start '>
         <div className='flex flex-col gap-2 '>
           <div className='Name-title font-bold text-4xl leading-normal'>{item.Name}</div>
@@ -40,7 +40,7 @@ const SpeakerCard = ({ item }) => {
           </a>
         </div>
       </div>
-      <img src={item.ImgLink} alt="" className='h-[330px] w-[400px] overflow-hidden border border-black rounded-2xl' />
+      <img src={item.ImgLink} alt="" className='h-[330px] w-[400px] my-10 md:my-0 overflow-hidden border border-black rounded-2xl' />
     </div>
   )
 }
