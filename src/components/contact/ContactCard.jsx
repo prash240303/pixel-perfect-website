@@ -1,5 +1,5 @@
 import React from 'react'
-
+import '../committee/PersonCard.css'
 function ContactCard({ item }) {
     console.log(item.name)
     return (
