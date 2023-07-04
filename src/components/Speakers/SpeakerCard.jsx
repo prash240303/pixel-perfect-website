@@ -2,6 +2,7 @@ import React from 'react'
 
 const SpeakerCard = ({ item }) => {
   return (
+
     <div className='flex  w-full flex-col md:flex-row pb-6 border-b border-black justify-between '>
       <div className='flex w-full flex-col  items-start '>
 
@@ -41,12 +42,12 @@ const SpeakerCard = ({ item }) => {
             <div className='mt-6 flex items-center justify-center  py-5 px-7 text-xl md:text-2xl font-bold bg-[#141414] hover:bg-zinc-800 text-white rounded-full uppercase'>Abstact</div>
           </a>
         </div>
-    
-      <img src={item.ImgLink} alt="" className='h-[330px] w-[400px] my-10 md:my-0 overflow-hidden border border-black rounded-2xl' />
-    </div>
-
+        </div>
+        <img src={item.ImgLink} alt="" className='h-[330px] w-[400px] my-10 md:my-0 overflow-hidden border border-black rounded-2xl' />
       
-    </div >
+
+
+    </div>
 
   )
 }
