@@ -8,7 +8,7 @@ const Biocard = () => {
 
                 <div className='flex   flex-col  items-start  '>
                     <div className=' text-[4rem]  font-custom font-bold uppercase'>
-                        noel schulz
+                    Prof Bimal Kumar Roy
                     </div>
                     <div className='font-bold text-2xl'>
                         PROFESSOR AI ETHICS, STANDFORD UNIVERSITY
@@ -45,8 +45,6 @@ const Biocard = () => {
                                 </div>
                             </div>
                         </div>
-
-
                     </div>
                 </div>
             </div>

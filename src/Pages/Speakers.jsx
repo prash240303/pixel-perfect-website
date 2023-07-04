@@ -35,6 +35,11 @@ function Speakers() {
                                                 ImgLink: 'Loading',
                                                 Institute: 'Loading',
                                                 ProfileLink: 'Loading',
+                                                TalkType: 'loading',
+                                                TalkTitle: 'Loading',
+                                                Bio: 'Loading',
+                                                Abstract: 'Loading'
+
                                             }}
                                         />
                                     </>
