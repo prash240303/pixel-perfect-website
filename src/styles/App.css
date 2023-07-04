@@ -1,3 +1,6 @@
 .clip {
     clip-path: url(#curved-mask);
   }
+html{
+  overflow-x: hidden;
+}

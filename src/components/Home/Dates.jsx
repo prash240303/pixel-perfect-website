@@ -40,7 +40,7 @@ function Dates({ data }) {
                   })
                 )}
               </div>
-              <div className="flex w-full event font-bold text-3xl">{date.title}</div>
+              <div className="flex w-full event font-bold text-2xl md:text-3xl">{date.title}</div>
             </div>
           ))}
         </div>

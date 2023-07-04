@@ -3,14 +3,14 @@ import './PersonCard.css'
 
 const PersonCard = ({ single, item }) => {
     return (
-        <div className='flex flex-row items-start w-full gap-6 justify-between border-b pb-6 border-black '>
+        <div className='flex  items-start w-full gap-6 justify-between border-b pb-6 border-black person__card'>
             <div className='flex flex-col  gap-5 items-start  justify-between ' >
                 <div className='flex flex-col items-start mr-6'>
-                    <div className='flex flex-col  justify-center items-stretch font-bold font-custom text-[56px] leading-[4.5rem]'>{item.Type}</div>
+                    <div className='flex flex-col  justify-center items-stretch font-bold font-custom text-[45px] '>{item.Type}</div>
                     <div className='flex flex-col justify-center font-bold   text-lg '>{item.Subtype}</div>
                 </div>
                 <div className='flex flex-col items-start'>
-                    <div className='flex flex-col justify-center items-stretch font-bold   text-4xl'>{item.Name}</div>
+                    <div className='flex flex-col justify-center items-stretch font-bold   text-3xl'>{item.Name}</div>
                     <div className='flex flex-col justify-center items-stretch font-medium   text-xl'>{item.Designation}</div>
                     <div className='flex flex-col justify-center items-stretch font-medium   text-xl'> {item.Institute}</div>
                 </div>
