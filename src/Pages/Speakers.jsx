@@ -13,9 +13,9 @@ function Speakers() {
     return (
         <>
             <main className="view-container flex  my-6 px-6 w-full">
-                <div className='flex flex-row px-6 items-start justify-between w-full gap-6  border border-x-black border-y-0'>
-                    <div className='flex   flex-col  items-start   text-[4rem] w-[400px] font-custom font-bold '>Speakers </div>
-                    <div className='flex flex-col w-full px-6 border-l border-black'>
+                <div className='flex md:flex-row flex-col px-6 items-start justify-between w-full gap-6  border border-x-black border-y-0'>
+                    <div className='flex   flex-col  items-start   text-[4rem] w-full md:w-2/5 font-custom font-bold '>Speakers </div>
+                    <div className='flex flex-col w-full px-2 md:px-6 border-l border-black'>
                         {(
                             <div id='cards-wrapper' className='flex w-full  item flex-col gap-6  items-start  align-top '>
                                 {data.length > 0 ? (

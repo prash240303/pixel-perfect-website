@@ -11,7 +11,7 @@ function Prizes() {
                 <div className='flex flex-col flex-wrap md:flex-row gap-12 justify-center items-center'>
 
                     <div>
-                        <svg width="360" height="501" viewBox="0 0 360 501" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <svg width="280" height="450" viewBox="0 0 360 501" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M0 24.3999C0 11.1451 10.7452 0.399902 24 0.399902H336C349.255 0.399902 360 11.1451 360 24.3999V476.4C360 489.655 349.255 500.4 336 500.4H24C10.7452 500.4 0 489.655 0 476.4V24.3999Z" fill="#141414" />
                             <path d="M0 24.3999C0 11.1451 10.7452 0.399902 24 0.399902H100V76.3999C100 89.6547 89.2548 100.4 76 100.4H0V24.3999Z" fill="white" />
                             <path d="M124 0.399902L100 0.399902V24.3999C100 11.1451 110.745 0.399902 124 0.399902Z" fill="white" />
@@ -21,7 +21,7 @@ function Prizes() {
 
                     </div>
                     <div>
-                        <svg width="360" height="501" viewBox="0 0 360 501" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <svg width="280" height="450" viewBox="0 0 360 501" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M0 24.3999C0 11.1451 10.7452 0.399902 24 0.399902H336C349.255 0.399902 360 11.1451 360 24.3999V476.4C360 489.655 349.255 500.4 336 500.4H24C10.7452 500.4 0 489.655 0 476.4V24.3999Z" fill="#141414" />
                             <path d="M260 424.4C260 411.145 270.745 400.4 284 400.4H360V476.4C360 489.655 349.255 500.4 336 500.4H260V424.4Z" fill="white" />
                             <path d="M236 500.4H260V476.4C260 489.655 249.255 500.4 236 500.4Z" fill="white" />
@@ -31,7 +31,7 @@ function Prizes() {
 
                     </div>
                     <div>
-                        <svg width="360" height="501" viewBox="0 0 360 501" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <svg width="280" height="450" viewBox="0 0 360 501" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M0 24.3999C0 11.1451 10.7452 0.399902 24 0.399902H336C349.255 0.399902 360 11.1451 360 24.3999V476.4C360 489.655 349.255 500.4 336 500.4H24C10.7452 500.4 0 489.655 0 476.4V24.3999Z" fill="#141414" />
                             <path d="M260 0.399902H340C351.046 0.399902 360 9.35421 360 20.3999V100.4H280C268.954 100.4 260 91.4456 260 80.3999V0.399902Z" fill="white" />
                             <path d="M360 124.4V100.4H336C349.255 100.4 360 111.145 360 124.4Z" fill="white" />
