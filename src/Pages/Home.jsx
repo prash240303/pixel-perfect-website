@@ -31,7 +31,6 @@ function Home() {
 
   // Get the first image with name "WIE"
   const heroImage = imageData.find((image) => image.name === "WIE") || {};
-  
   return (
     <>
       {loading ? (
