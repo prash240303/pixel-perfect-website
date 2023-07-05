@@ -33,7 +33,7 @@ function Footer() {
                         <h2 className="mb-3 footerLinkHeading">Contact us</h2>
                         <nav className="list-none mb-10 footerLinks">
                             <li className="mb-5">
-                                <div className="  ">Dr B R Ambedkar National Institute of Technology Jalandhar G.T Road, Amritsar Bypass, Jalandhar, Punjab, India-144008</div>
+                                <div className="text-white">Dr B R Ambedkar National Institute of Technology Jalandhar G.T Road, Amritsar Bypass, Jalandhar, Punjab, India-144008</div>
                             </li>
                             <li className="mb-5 text-white">
                                 Telephone  : +919888604632
