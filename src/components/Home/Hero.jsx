@@ -1,4 +1,4 @@
-const Hero = ({ data }) => {
+const Hero = ({ data, image }) => {
   return (
 
     <section className="hero-section flex px-6 pb-6 w-full items-start justify-start">
@@ -10,7 +10,7 @@ const Hero = ({ data }) => {
           </div>
           <div className="flex flex-col sm:flex-col md:flex-row justify-end self-stretch rounded-3xl gap-6">
             <div className="left-side sm:w-full  md:w-2/3 flex-grow flex pr-6 border border-y-0 border-l-0 border-r-black">
-              <img src= {data.logo} alt="conf-image" className="w-full h-full object-cover" />
+              <img src= {image.imgLink} alt="conf-image" className="w-full rounded-3xl h-full object-cover" />
             </div>
             <div className="right-side sm:w-full md:w-1/3 flex flex-col justify-between">
               <div className="flex flex-col gap-2 py-6 border-b border-black font-bold  text-3xl">
