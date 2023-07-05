@@ -34,7 +34,7 @@ function Navbaar() {
         className="p-1 font-bold text-lg uppercase text-black cursor-pointer"
         onClick={closeNav}
       >
-        <Link to="/paper-themes" className="mr-10 hover:text-gray-700">Paper Themes</Link>
+        <Link to="/paper themes" className="mr-10 hover:text-gray-700">Paper Themes</Link>
       </Typography>
       <Typography
         as="li"
@@ -43,7 +43,7 @@ function Navbaar() {
         className="p-1 font-bold text-lg uppercase text-black cursor-pointer"
         onClick={closeNav}
       >
-        <Link to="/speakers" className="mr-10 hover:text-gray-700">Speakers</Link>
+        <Link to="/speaker" className="mr-10 hover:text-gray-700">Speakers</Link>
       </Typography>
       <Typography
         as="li"
