@@ -1,6 +1,7 @@
 import React from 'react'
 import '../../styles/Speakers.css'
 const Biocard = ({data, showBio}) => {
+    // const [showMore, setShowMore] = useState(false);
     return (
 
         <main className=" view-container  mx-auto  px-6 py-6 w-full text-white bg-black">
@@ -23,7 +24,7 @@ const Biocard = ({data, showBio}) => {
                                 {/* <div className='font-bold text-xl  bg-black text-white px-5 py-3 rounded-full'>Profile Link</div> */}
                                 <div className='text-lg'>
                                     <span className='block font-bold text-3xl'>Talk Title</span>
-                                    {data.TalkTitle}
+                                    {data.TalkTitle.slice(0, 100)}
                                 </div>
                             </div>
                         </div>
@@ -34,13 +35,13 @@ const Biocard = ({data, showBio}) => {
                                 {showBio==='bio' ? <div>
                                     <div className='text-xl font-semibold  leading-normal'>BIO</div>
                                     <div className='bio-content text-base '>
-                                        {data.Bio}
+                                        {data.Bio.slice(0, 100)}
                                     </div>
                                 </div> :
                                 <div>
                                     <div className='text-xl font-semibold  leading-normal'>ABSTRACT</div>
                                     <div className='abstract-content text-base'>
-                                    {data.Abstract}
+                                    {data.Abstract.slice(0, 100)}
                                     </div>
                                 </div>}
                             </div>
