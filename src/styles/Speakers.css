@@ -1,8 +1,78 @@
 @media only screen and (max-width: 768px) {
-    .speaker-container {
-      border-left: none;
-      /* padding-inline: 0px; */
-    }
+  .speaker-container {
+    border-left: none;
+    /* padding-inline: 0px; */
   }
+}
 
+.speaker-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* Add this line to center the content */
+  width: 100%;
+  padding: 0 20px;
+  /* Adjust the padding as needed */
+}
+.modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1050;
+  display: none;
+  overflow: hidden;
+  outline: 0;
+}
+.fade {
+  opacity: 0;
+  transition: opacity .15s linear;
+}
+.fade.show {
+  opacity: 1;
+}
+.modal.fade .modal-dialog {
+  transition: -webkit-transform .3s ease-out;
+  transition: transform .3s ease-out;
+  transition: transform .3s ease-out,-webkit-transform .3s ease-out;
+  -webkit-transform: translate(0,-25%);
+  transform: translate(0,-25%);
+}
+.modal-dialog {
+  max-width: 70vw;
+}
+@media (min-width: 576px){
+.modal-dialog {
+  max-width: 500px;
+  margin: 30px auto;
+}}
+
+.modal-dialog {
+  position: relative;
+  width: auto;
+  margin: 10px;
+  pointer-events: none;
+}
+.modal-content {
+  position: relative;
+  
+  display: flex;
+  
+  flex-direction: column;
+  pointer-events: auto;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid rgba(0,0,0,.2);
+  border-radius: .3rem;
+  outline: 0;
+}
+.modal-body {
+  position: relative;
+  flex: 1 1 auto;
+  padding: 15px;
+}
+.modal-content {
+  pointer-events: auto;
+}
 

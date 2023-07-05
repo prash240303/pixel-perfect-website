@@ -1,10 +1,10 @@
 import React from 'react'
-
+import '../../styles/Speakers.css'
 const Biocard = () => {
     return (
 
-        <main className="view-container flex  my-6 px-6 w-full">
-            <div className='flex flex-row px-6 items-start justify-between w-full gap-6  border border-x-black border-y-0'>
+        <main className=" view-container  mx-auto  px-6 py-6 w-full text-white bg-black">
+            <div className='flex flex-col md:flex-row px-6 items-start justify-between  gap-6  border border-x-black border-y-0'>
 
                 <div className='flex   flex-col  items-start  '>
                     <div className=' text-[4rem]  font-custom font-bold uppercase'>
@@ -17,10 +17,10 @@ const Biocard = () => {
 
                 <div className='flex flex-col w-full items-start justify-start px-6 border-l border-black'>
                     <div className=' upper-section flex flex-col items-start  w-full gap-6 border-b border-black'>
-                        <div className='flex flex-row gap-6 items-start justify-start w-full pb-6'  >
+                        <div className='flex flex-col md:flex-row gap-6 items-start justify-start w-full pb-6'  >
                             <img src="https://5.imimg.com/data5/AK/RA/MY-68428614/apple.jpg" alt="" className='w-[200px] border border-black' />
                             <div className='flex flex-col gap-6'>
-                                <div className='font-bold text-xl w-fit bg-black text-white px-5 py-3 rounded-full'>Profile Link</div>
+                                <div className='font-bold text-xl  bg-black text-white px-5 py-3 rounded-full'>Profile Link</div>
                                 <div className='text-lg'>
                                     <span className='block font-bold text-3xl'>Talk Title</span>
                                     The Continuing Evolution of Grid Operation and Control
