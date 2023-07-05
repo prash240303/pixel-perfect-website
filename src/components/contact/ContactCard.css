@@ -1,0 +1,23 @@
+
+  
+  .img-cont {
+    position: relative;
+    width: 280px;
+    height: 300px;
+    border-radius: 20px;
+    overflow: hidden; /* Add this line to prevent the parent div from hiding the shadows */
+  }
+ 
+  .image {
+    width: 100%;
+    scale: 105%;
+    height: 100%;
+
+  } 
+  
+   .cutout {
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+  }
+   

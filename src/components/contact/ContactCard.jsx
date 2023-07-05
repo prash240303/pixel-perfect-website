@@ -1,4 +1,5 @@
 import React from 'react'
+import './ContactCard.css'
 import '../committee/PersonCard.css'
 function ContactCard({ item }) {
     console.log(item.name)
@@ -18,27 +19,12 @@ function ContactCard({ item }) {
                 </div>
             </div>
 
-            <div className='flex flex-col items-start  mb-6 w-full gap-6'>
-                <div className='personImage  w-full rounded-2xl' alt="image" style={{ backgroundImage: `url(${item.imgLink})` }}>
-                    <div className='whiteBoxUpper'>
-                        <svg width="100" height="100">
-                            <mask id="curved-mask">
-                                <rect x="0" y="0" width="100%" height="100%" fill="black" />
-                                <circle cx="50%" cy="50%" r="50%" fill="white" />
-                            </mask>
-                        </svg>
-                    </div>
-                    <div class='flex items-end'>
-                        <div className='whiteBoxLower'>
-                            <svg width="100" height="100">
-                                <mask id="curved-mask">
-                                    <rect x="0" y="0" width="100%" height="100%" fill="black" />
-                                    <circle cx="50%" cy="50%" r="50%" fill="white" />
-                                </mask>
-                            </svg>
-                        </div>
-                        <div className='whiteBox'></div>
-                    </div>
+            <div className='flex flex-col  item-center mb-6  gap-6'>
+                <div className='img-cont'>
+                    <img src={item.imgLink} className='image' alt="" />
+                    <svg width="81" height="101" className='cutout' viewBox="0 0 81 101" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 101H61H81C69.9543 101 61 92.0457 61 81V40C61 28.9543 52.0457 20 41 20H20C8.95433 20 0 11.0457 0 0V20V101Z" fill="white" />
+                    </svg>
                 </div>
             </div>
         </div>

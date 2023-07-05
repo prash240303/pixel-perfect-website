@@ -29,30 +29,25 @@
     }
   }
 
-.whiteBox {
-    /* position: absolute; */
-    /* bottom: 000; */
-    /* right: 0; */
-    width: 85.81px;
-    height: 85.81px;
-    border-radius: 21.453px 0px 0px 0px;
-    background: var(--white, #FFF);
+  
+  .img-cont {
+    position: relative;
+    width: 260px;
+    height: 300px;
+    border-radius: 20px;
+    overflow: hidden; /* Add this line to prevent the parent div from hiding the shadows */
+  }
+ 
+  .image {
+    width: 100%;
+    scale: 105%;
+    height: 100%;
 
-}
-
-.whiteBoxUpper {
-    width: 21.453px;
-    height: 21.453px;
-    background: var(--white, #FFF);
-    mask: url('#curved-mask');
-
-}
-
-.whiteBoxLower {
-    width: 21.453px;
-    height: 21.453px;
-    flex-shrink: 0;
-    mask: url('#curved-mask');
-    background: var(--white, #FFF);
-
-}
+  } 
+  
+   .cutout {
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+  }
+   
