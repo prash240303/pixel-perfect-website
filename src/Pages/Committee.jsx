@@ -1,7 +1,7 @@
 import { React, useEffect, useState } from 'react'
 import PersonCard from '../components/committee/PersonCard'
 import fetchAPI from '../utils/fetchAPI'
-import "../styles/committee.css"
+import "../styles/Committee.css"
 function Committee() {
   const [data, setData] = useState([])
   const [loading, setLoading] = useState(false)

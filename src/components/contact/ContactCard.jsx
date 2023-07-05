@@ -4,10 +4,10 @@ import '../committee/PersonCard.css'
 function ContactCard({ item }) {
     console.log(item.name)
     return (
-        <div className='flex  w-full flex-row gap-6 border-b border-black '>
+        <div className='flex  w-full flex-col md:flex-row gap-6 border-b border-black '>
             <div className=' w-full flex flex-col gap-6'>
                 <div className='flex flex-col  items-start  '>
-                    <div className='text-4xl font-bold leading-normal'>{item.name}</div>
+                    <div className='text-3xl md:text-4xl font-bold leading-normal'>{item.name}</div>
                     <div className='text-xl font-semibold  leading-normal'>{item.designation}</div>
                     <div className='text-xl font-semibold  leading-normal'>{item.institute}</div>
                     <div className='text-xl font-normal mt-3 leading-normal'>Phone No : <span className='font-semibold'> {item.phone}</span></div>
