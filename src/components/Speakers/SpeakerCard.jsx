@@ -3,7 +3,18 @@ import '../../styles/Speakers.css'
 import Biocard from './Biocard';
 import { Modal } from 'react-bootstrap';
 const SpeakerCard = ({ item }) => {
-  const [showModal, setShowModal] = React.useState(false); 
+  const [showModal, setShowModal] = React.useState(false);
+  const [bio, setBio] = React.useState('bio'); 
+  const modelHandlerOnBio = () => {
+    setShowModal(true);
+    setBio('bio');
+
+  }
+  const modelHandlerOnAbstract = () => {
+    setShowModal(true);
+    setBio('abstract');
+
+  }
   return (
 
     <div className='flex  w-full flex-col md:flex-row pb-6 border-b border-black justify-between '>
@@ -39,10 +50,10 @@ const SpeakerCard = ({ item }) => {
         <div className='flex flex-row gap-6'>
 
 
-          <div className='mt-6 flex items-center justify-center  py-5 px-7 text-xl md:text-2xl font-bold bg-[#141414] hover:bg-zinc-800 text-white rounded-full uppercase'><button onClick={() => setShowModal(true)}><span className='uppercase'>Bio</span></button></div>
+          <div className='mt-6 flex items-center justify-center  py-5 px-7 text-xl md:text-2xl font-bold bg-[#141414] hover:bg-zinc-800 text-white rounded-full uppercase'><button onClick={modelHandlerOnBio}><span className='uppercase'>Bio</span></button></div>
 
 
-          <div className='mt-6 flex items-center justify-center  py-5 px-7 text-xl md:text-2xl font-bold bg-[#141414] hover:bg-zinc-800 text-white rounded-full uppercase'>Abstract</div>
+          <div className='mt-6 flex items-center justify-center  py-5 px-7 text-xl md:text-2xl font-bold bg-[#141414] hover:bg-zinc-800 text-white rounded-full uppercase'><button onClick={modelHandlerOnAbstract}><span className='uppercase'>Abstract</span></button></div>
 
         </div>
       </div>
@@ -58,7 +69,7 @@ const SpeakerCard = ({ item }) => {
               <div className="border-0 rounded-lg shadow-lg relative flex flex-col w-full md:w-3/5 bg-black outline-none focus:outline-none">
                 {/*header*/}
                 
-                <Biocard data={item}/>
+                <Biocard data={item} showBio={bio}/>
                 {/*footer*/}
                 <div className="flex items-center justify-end p-6 border-t border-solid border-slate-200 rounded-b">
                   <button

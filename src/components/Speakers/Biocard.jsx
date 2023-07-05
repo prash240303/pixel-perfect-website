@@ -1,6 +1,6 @@
 import React from 'react'
 import '../../styles/Speakers.css'
-const Biocard = ({data}) => {
+const Biocard = ({data, showBio}) => {
     return (
 
         <main className=" view-container  mx-auto  px-6 py-6 w-full text-white bg-black">
@@ -31,18 +31,18 @@ const Biocard = ({data}) => {
                     <div className='flex  w-full flex-row gap-6  '>
                         <div className=' w-full flex flex-col gap-6'>
                             <div className='flex flex-col gap-4  items-start  '>
-                                <div>
+                                {showBio==='bio' ? <div>
                                     <div className='text-xl font-semibold  leading-normal'>BIO</div>
                                     <div className='bio-content text-base '>
                                         {data.Bio}
                                     </div>
-                                </div>
+                                </div> :
                                 <div>
                                     <div className='text-xl font-semibold  leading-normal'>ABSTRACT</div>
                                     <div className='abstract-content text-base'>
                                     {data.Abstract}
                                     </div>
-                                </div>
+                                </div>}
                             </div>
                         </div>
                     </div>
