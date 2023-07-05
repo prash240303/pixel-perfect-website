@@ -43,13 +43,7 @@ function Navbaar() {
           setSelectedOption("paper-themes");
         }}
       >
-<<<<<<< Updated upstream
-        <Link to="/" className="mr-10 hover:text-gray-700">
-          Paper Themes
-        </Link>
-=======
         <Link to="/" className="mr-10 hover:text-gray-700">Paper Themes</Link>
->>>>>>> Stashed changes
       </Typography>
       <Typography
         as="li"
@@ -89,13 +83,7 @@ function Navbaar() {
           setSelectedOption("sponsors");
         }}
       >
-<<<<<<< Updated upstream
-        <Link to="/" className="mr-10 hover:text-gray-700">
-          Sponsors
-        </Link>
-=======
         <Link to="/" className="mr-10 hover:text-gray-700">Sponsors</Link>
->>>>>>> Stashed changes
       </Typography>
       <Typography
         as="li"
@@ -107,13 +95,7 @@ function Navbaar() {
           setSelectedOption("awards");
         }}
       >
-<<<<<<< Updated upstream
-        <Link to="/" className="mr-10 hover:text-gray-700">
-          Awards
-        </Link>
-=======
         <Link to="/" className="mr-10 hover:text-gray-700">Awards</Link>
->>>>>>> Stashed changes
       </Typography>
       <Typography
         as="li"
@@ -125,13 +107,7 @@ function Navbaar() {
           setSelectedOption("registrations");
         }}
       >
-<<<<<<< Updated upstream
-        <Link to="/" className="mr-10 hover:text-gray-700">
-          Registrations
-        </Link>
-=======
         <Link to="/" className="mr-10 hover:text-gray-700">Registrations</Link>
->>>>>>> Stashed changes
       </Typography>
       <Typography
         as="li"

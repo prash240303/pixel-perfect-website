@@ -12,7 +12,7 @@ function PrizeCard({ item }) {
             <div className='flex flex-col gap-4 h-auto place-items-center px-4 border-x text-white border-white'>
                 <div className='flex flex-row  font-bold font-custom text-5xl  items-center  text-center'>{item.title1}</div>
                 <div className='flex flex-wrap font-bold py-1 text-3xl px-2 items-center text-center w-45 rounded-[12px] bg-white text-black'>{item.title2}</div>
-                <div className='flex flex-wrap font-normal text-center'>
+                <div className='flex flex-wrap font-normal text-justify'>
                     <p>
                         {showMore || item.description.length <= 130
                             ? item.description
