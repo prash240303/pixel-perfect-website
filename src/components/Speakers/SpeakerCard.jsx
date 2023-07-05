@@ -58,7 +58,7 @@ const SpeakerCard = ({ item }) => {
         </div>
       </div>
 
-      <img src={item.ImgLink} alt="" className='h-[330px] w-[400px] my-10 md:my-0 overflow-hidden border border-black rounded-2xl' />
+      <img src={item.ImgLink} alt={item.Name} className='h-[330px] w-[400px] my-10 md:my-0 overflow-hidden border border-black rounded-2xl' />
       {showModal ? (
         <>
           <div

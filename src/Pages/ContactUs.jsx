@@ -66,9 +66,7 @@ function ContactUs() {
                 referrerpolicy="no-referrer-when-downgrade"
               ></iframe>
             </div>
-            {/* <div className='block md:hidden pr-6 border-r border-black'>
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3405.6622730186928!2d75.53326897492673!3d31.395874574271303!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391a51d30c180edf%3A0x5b7633718d17ef33!2sDr%20B%20R%20Ambedkar%20National%20Institute%20of%20Technology%20Jalandhar!5e0!3m2!1sen!2sin!4v1688044920371!5m2!1sen!2sin" width={250} height={400} style={{ borderRadius: "20px" }} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" ></iframe>
-            </div> */}
+           
             <div className="flex flex-col text-2xl gap-3">
               <p>Indian Institute of Technology Gandhinagar</p>
               <p>Palaj, Gandhinagar - 382355, Gujarat, India</p>

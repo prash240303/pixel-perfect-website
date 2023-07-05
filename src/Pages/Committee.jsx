@@ -9,7 +9,6 @@ function Committee() {
   useEffect(() => {
     fetchAPI(setData, setLoading, endPoint);
   }, []);
-  console.log(data)
   return (
     <>
       <main className="view-container flex  my-6 px-6 w-full">

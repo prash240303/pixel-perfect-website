@@ -31,10 +31,10 @@ const Hero = ({ data, image }) => {
                 <img src={data.logo} alt="" className='w-full' />
               </div>
               <div className='socials flex py-5 flex-row  justify-between items-center'>
-                <a href={data.twitterLink} target='_blank'> <img src="./twitter.svg" className='w-12' alt="" /> </a>
-                <a href={data.instaLink} target='_blank'>  <img src="./instagram.svg" className='w-12' alt="" /></a>
-                <a href={data.facebookLink} target='_blank'>  <img src="./facebook.svg" className='w-12' alt="" /></a>
-                <a href={data.youtubeLink} target='_blank'>  <img src="./youtube.svg" className='w-12' alt="" /></a>
+                <a href={data.twitterLink} target='_blank'> <img src="./Socials/twitter.svg" className='w-12' alt="" /> </a>
+                <a href={data.instaLink} target='_blank'>  <img src="./Socials/instagram.svg" className='w-12' alt="" /></a>
+                <a href={data.facebookLink} target='_blank'>  <img src="./Socials/facebook.svg" className='w-12' alt="" /></a>
+                <a href={data.youtubeLink} target='_blank'>  <img src="./Socials/youtube.svg" className='w-12' alt="" /></a>
               </div>
               <div className='button  flex  font-bold text-xl px-6 py-6 justify-center items-center rounded-2xl bg-black text-white'>Register Now</div>
             </div>
@@ -45,7 +45,7 @@ const Hero = ({ data, image }) => {
         </div>
       </div>
 
-    </section> // Your existing JSX code for the Hero component
+    </section> 
   );
 };
 

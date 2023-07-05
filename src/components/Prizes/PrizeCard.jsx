@@ -7,7 +7,6 @@ function PrizeCard({ item }) {
   function handleReadmore() {
     setShowMore(!showMore);
   }
-    
 
   return (
     <div className="flex flex-col  mt-6 md:flex-row md:w-[300px] mx-6 px-2 md:py-6 md:h-max bg-black rounded-[20px] flex-grow">

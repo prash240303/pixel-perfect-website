@@ -27,8 +27,8 @@ function About({ data }) {
               <span className='font-base text-lg'>In Joint Collaboration with</span> <br /> Dr B R Ambedkar National Institute of Technology, Jalandhar, Punjab, India.
             </div>
             <div className='images flex gap-12 py-6'>
-              <img src="https://www.nitj.ac.in/public/assets/images/logo_250.png" alt="" className='w-28' />
-              <img src="https://www.nitj.ac.in/public/assets/images/logo_250.png" alt="" className='w-28' />
+              <img src="https://www.nitj.ac.in/public/assets/images/logo_250.png" alt="nitjlogo" className='w-28' />
+              <img src="https://www.nitj.ac.in/public/assets/images/logo_250.png" alt="nitjlogo" className='w-28' />
             </div>
           </div>
         </div>

@@ -5,7 +5,7 @@
     width: 280px;
     height: 300px;
     border-radius: 20px;
-    overflow: hidden; /* Add this line to prevent the parent div from hiding the shadows */
+    overflow: hidden; 
   }
  
   .image {

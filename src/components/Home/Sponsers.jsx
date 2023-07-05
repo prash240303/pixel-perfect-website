@@ -1,7 +1,6 @@
 import React from 'react';
 
 function Sponsers({ data }) {
-  // Group sponsors by type
   const groupedSponsors = data.reduce((groups, sponsor) => {
     const type = sponsor.type;
     if (!groups[type]) {

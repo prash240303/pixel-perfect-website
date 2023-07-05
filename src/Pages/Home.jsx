@@ -29,12 +29,11 @@ function Home() {
     fetchAPI(setAnnoucementData, setLoading, announcementEndPoint)
   }, []);
 
-  // Get the first image with name "WIE"
   const heroImage = imageData.find((image) => image.name === "WIE") || {};
   return (
     <>
       {loading ? (
-        <div className="font-bold text-lg">Loading...</div> // Render a loading indicator when loading is true
+        <div className="font-bold text-lg">Loading...</div> 
       ) : (
         <main className="view-container flex flex-col mt-6 w-full">
           <Hero data={heroData} image={heroImage} />

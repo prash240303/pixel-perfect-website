@@ -1,17 +1,4 @@
-.personImage {
-    /* position: relative; */
-    width: 424px;
-    height: 360px;
-    flex-shrink: 0;
-    background-position: center;
-    background-repeat: no-repeat;
 
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    justify-content: flex-end;
-}
 @media only screen and (max-width: 600px) {
     .personImage  {
         width: 250px;
@@ -35,7 +22,7 @@
     width: 260px;
     height: 300px;
     border-radius: 20px;
-    overflow: hidden; /* Add this line to prevent the parent div from hiding the shadows */
+    overflow: hidden; 
   }
  
   .image {

@@ -33,7 +33,7 @@ function Footer() {
                         <h2 className="mb-3 footerLinkHeading">Contact us</h2>
                         <nav className="list-none mb-10 footerLinks">
                             <li className="mb-5">
-                                <a href="" className="  ">Dr B R Ambedkar National Institute of Technology Jalandhar G.T Road, Amritsar Bypass, Jalandhar, Punjab, India-144008</a>
+                                <div className="  ">Dr B R Ambedkar National Institute of Technology Jalandhar G.T Road, Amritsar Bypass, Jalandhar, Punjab, India-144008</div>
                             </li>
                             <li className="mb-5 text-white">
                                 Telephone  : +919888604632
@@ -52,16 +52,16 @@ function Footer() {
                     </p>
                     <span className="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start cursor-pointer">
                         <a className="text-gray-500 " href='https://www.instagram.com/nitjofficial/' target="_blank">
-                            <img src="./Icons/instagram-icon.svg" className='w-6' alt="" />
+                            <img src="./Icons/instagram-icon.svg" className='w-6' alt="instagramIcon" />
                         </a>
                         <a className="ml-3 text-gray-500" href='https://twitter.com/NITJofficial' target="_blank">
-                            <img src="./Icons/twitter-icon.svg" alt="" className='w-6' />
+                            <img src="./Icons/twitter-icon.svg" alt="twitterIcon" className='w-6' />
                         </a>
                         <a className="ml-3 text-gray-500" href='https://www.facebook.com/NITJofficial' target="_blank" >
-                            <img src="./Icons/facebook-icon.svg" className='w-6' alt="" />
+                            <img src="./Icons/facebook-icon.svg" className='w-6' alt="FacebookIcon" />
                         </a>
                         <a className="ml-3 text-gray-500" href='https://www.linkedin.com/school/dr-b-r-ambedkar-national-institute-of-technology-jalandhar-official/?originalSubdomain=in' target="_blank" >
-                            <img src="./Icons/linkedin-icon.svg" alt="" className='w-6' />
+                            <img src="./Icons/linkedin-icon.svg" alt="linkedinLogo" className='w-6' />
                         </a>
                     </span>
                 </div>

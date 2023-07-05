@@ -44,10 +44,3 @@ export default Prizes
 
 
 
-
-// < PrizeCard awards={{
-//     id: "default",
-//     title1: "loading",
-//     title2: "loading",
-//     description: "loading",
-// }} />
