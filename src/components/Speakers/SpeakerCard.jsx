@@ -50,10 +50,10 @@ const SpeakerCard = ({ item }) => {
         <div className='flex flex-row gap-6'>
 
 
-          <div className='mt-6 flex items-center justify-center  py-5 px-7 text-xl md:text-2xl font-bold bg-[#141414] hover:bg-zinc-800 text-white rounded-full uppercase'><button onClick={modelHandlerOnBio}><span className='uppercase'>Bio</span></button></div>
+          <div   onClick={modelHandlerOnBio} className='mt-6 flex items-center justify-center  py-5 px-7 text-xl md:text-2xl font-bold bg-[#141414] hover:bg-zinc-800 text-white rounded-full cursor-pointer uppercase'>Bio</div>
 
 
-          <div className='mt-6 flex items-center justify-center  py-5 px-7 text-xl md:text-2xl font-bold bg-[#141414] hover:bg-zinc-800 text-white rounded-full uppercase'><button onClick={modelHandlerOnAbstract}><span className='uppercase'>Abstract</span></button></div>
+          <div onClick={modelHandlerOnAbstract} className='mt-6 flex items-center justify-center  py-5 px-7 text-xl md:text-2xl font-bold bg-[#141414] hover:bg-zinc-800 text-white rounded-full uppercase cursor-pointer'>Abstract</div>
 
         </div>
       </div>
@@ -65,12 +65,8 @@ const SpeakerCard = ({ item }) => {
             className="justify-center items-center flex overflow-x-hidden overflow-y-scroll fixed inset-0 z-50 outline-none focus:outline-none"
           >
             <div className="relative flex justify-center">
-              {/*content*/}
               <div className="border-0 rounded-lg shadow-lg relative flex flex-col w-full md:w-3/5 bg-black outline-none focus:outline-none">
-                {/*header*/}
-                
                 <Biocard data={item} showBio={bio}/>
-                {/*footer*/}
                 <div className="flex items-center justify-end p-6 border-t border-solid border-slate-200 rounded-b">
                   <button
                     className="text-red-500 background-transparent font-bold uppercase px-6 py-2 text-sm outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
@@ -79,13 +75,7 @@ const SpeakerCard = ({ item }) => {
                   >
                     Close
                   </button>
-                  {/* <button
-                    className="bg-emerald-500 text-white active:bg-emerald-600 font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
-                    type="button"
-                    onClick={() => setShowModal(false)}
-                  >
-                    Save Changes
-                  </button> */}
+                 
                 </div>
               </div>
             </div>
