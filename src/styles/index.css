@@ -33,7 +33,6 @@ body {
   min-width: 320px;
   min-height: 100vh;
   line-height: 1.5;
-  overflow-x: hidden;
 }
 
 /* Add the following media query */
