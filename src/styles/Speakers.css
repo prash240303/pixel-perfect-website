@@ -1,0 +1,8 @@
+@media only screen and (max-width: 768px) {
+    .speaker-container {
+      border-left: none;
+      /* padding-inline: 0px; */
+    }
+  }
+
+
