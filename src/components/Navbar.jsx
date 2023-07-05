@@ -4,7 +4,8 @@ import { Navbar, MobileNav, Typography, IconButton } from "@material-tailwind/re
 
 function Navbaar() {
   const [openNav, setOpenNav] = React.useState(false);
- 
+  const [selectedOption, setSelectedOption] = React.useState("");
+
   React.useEffect(() => {
     window.addEventListener(
       "resize",
@@ -17,78 +18,134 @@ function Navbaar() {
   };
 
   const navList = (
-    <ul className="mb-4 mt-2 flex flex-col lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:flex-wrap ">
+    <ul className="mb-4 mt-2 flex flex-col lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:flex-wrap">
       <Typography
         as="li"
         variant="small"
-        color="blue-gray"
+        color={selectedOption === "home" ? "blue" : "blue-gray"}
         className="p-1 font-bold text-lg uppercase text-black cursor-pointer"
-        onClick={closeNav}
+        onClick={() => {
+          closeNav();
+          setSelectedOption("home");
+        }}
       >
-        <Link to="/" className="mr-10 hover:text-gray-700">Home</Link>
+        <Link to="/" className="mr-10 hover:text-gray-700">
+          Home
+        </Link>
       </Typography>
       <Typography
         as="li"
         variant="small"
-        color="blue-gray"
+        color={selectedOption === "paper-themes" ? "blue" : "blue-gray"}
         className="p-1 font-bold text-lg uppercase text-black cursor-pointer"
-        onClick={closeNav}
+        onClick={() => {
+          closeNav();
+          setSelectedOption("paper-themes");
+        }}
       >
-        <Link to="/paper themes" className="mr-10 hover:text-gray-700">Paper Themes</Link>
+<<<<<<< Updated upstream
+        <Link to="/" className="mr-10 hover:text-gray-700">
+          Paper Themes
+        </Link>
+=======
+        <Link to="/" className="mr-10 hover:text-gray-700">Paper Themes</Link>
+>>>>>>> Stashed changes
       </Typography>
       <Typography
         as="li"
         variant="small"
-        color="blue-gray"
+        color={selectedOption === "speakers" ? "blue" : "blue-gray"}
         className="p-1 font-bold text-lg uppercase text-black cursor-pointer"
-        onClick={closeNav}
+        onClick={() => {
+          closeNav();
+          setSelectedOption("speakers");
+        }}
       >
-        <Link to="/speaker" className="mr-10 hover:text-gray-700">Speakers</Link>
+        <Link to="/speaker" className="mr-10 hover:text-gray-700">
+          Speakers
+        </Link>
       </Typography>
       <Typography
         as="li"
         variant="small"
-        color="blue-gray"
+        color={selectedOption === "committee" ? "blue" : "blue-gray"}
         className="p-1 font-bold text-lg uppercase text-black cursor-pointer"
-        onClick={closeNav}
+        onClick={() => {
+          closeNav();
+          setSelectedOption("committee");
+        }}
       >
-        <Link to="/committee" className="mr-10 hover:text-gray-700">Committee</Link>
+        <Link to="/committee" className="mr-10 hover:text-gray-700">
+          Committee
+        </Link>
       </Typography>
       <Typography
         as="li"
         variant="small"
-        color="blue-gray"
+        color={selectedOption === "sponsors" ? "blue" : "blue-gray"}
         className="p-1 font-bold text-lg uppercase text-black cursor-pointer"
-        onClick={closeNav}
+        onClick={() => {
+          closeNav();
+          setSelectedOption("sponsors");
+        }}
       >
-        <Link to="/sponsors" className="mr-10 hover:text-gray-700">Sponsors</Link>
+<<<<<<< Updated upstream
+        <Link to="/" className="mr-10 hover:text-gray-700">
+          Sponsors
+        </Link>
+=======
+        <Link to="/" className="mr-10 hover:text-gray-700">Sponsors</Link>
+>>>>>>> Stashed changes
       </Typography>
       <Typography
         as="li"
         variant="small"
-        color="black"
-        className="p-1 font-bold text-lg uppercase text-black cursor-pointer "
-        onClick={closeNav}
+        color={selectedOption === "awards" ? "blue" : "blue-gray"}
+        className="p-1 font-bold text-lg uppercase text-black cursor-pointer"
+        onClick={() => {
+          closeNav();
+          setSelectedOption("awards");
+        }}
       >
-        <Link to="/awards" className="mr-10 hover:text-gray-700">Awards</Link>
+<<<<<<< Updated upstream
+        <Link to="/" className="mr-10 hover:text-gray-700">
+          Awards
+        </Link>
+=======
+        <Link to="/" className="mr-10 hover:text-gray-700">Awards</Link>
+>>>>>>> Stashed changes
       </Typography>
       <Typography
         as="li"
         variant="small"
-        color="blue-gray"
+        color={selectedOption === "registrations" ? "blue" : "blue-gray"}
         className="p-1 font-bold text-lg uppercase text-black cursor-pointer"
-        onClick={closeNav}
+        onClick={() => {
+          closeNav();
+          setSelectedOption("registrations");
+        }}
       >
-        <Link to="/registrations" className="mr-10 hover:text-gray-700">Registrations</Link>
+<<<<<<< Updated upstream
+        <Link to="/" className="mr-10 hover:text-gray-700">
+          Registrations
+        </Link>
+=======
+        <Link to="/" className="mr-10 hover:text-gray-700">Registrations</Link>
+>>>>>>> Stashed changes
       </Typography>
       <Typography
         as="li"
         variant="small"
-        color="blue-gray"
+        color={selectedOption === "contact" ? "blue" : "blue-gray"}
         className="p-1 font-bold text-lg uppercase text-black cursor-pointer"
-        onClick={closeNav}
+        onClick={() => {
+          closeNav();
+          setSelectedOption("contact");
+        }}
       >
-        <Link to="/contact" className="mr-10 hover:text-gray-700">Contact</Link>
+        <Link to="/contact" className="mr-10 hover:text-gray-700">
+          Contact
+        </Link>
       </Typography>
     </ul>
   );
@@ -107,7 +164,7 @@ function Navbaar() {
             <IconButton
               variant="text"
               className="ml-auto h-6 w-6 color text-inherit text-black hover:bg-transparent focus:bg-transparent active:bg-transparent lg:hidden"
-              color='black'
+              color="black"
               ripple={false}
               onClick={toggleNav}
             >
@@ -120,11 +177,7 @@ function Navbaar() {
                   stroke="currentColor"
                   strokeWidth={2}
                 >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M6 18L18 6M6 6l12 12"
-                  />
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
                 </svg>
               ) : (
                 <svg
@@ -134,18 +187,16 @@ function Navbaar() {
                   stroke="currentColor"
                   strokeWidth={2}
                 >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M4 6h16M4 12h16M4 18h16"
-                  />
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M4 6h16M4 12h16M4 18h16" />
                 </svg>
               )}
             </IconButton>
           </div>
         </div>
         <MobileNav open={openNav}>
-          <div className="max-w-full" onClick={closeNav}>{navList}</div>
+          <div className="max-w-full" onClick={closeNav}>
+            {navList}
+          </div>
         </MobileNav>
       </Navbar>
     </>
