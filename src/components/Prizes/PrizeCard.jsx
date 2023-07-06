@@ -8,27 +8,29 @@ function PrizeCard({ item }) {
     setShowMore(!showMore);
   }
 
-
   return (
-    <section class="text-gray-600 body-font">
-  <div class="container px-5 py-5 mx-auto">
-    <div class="flex flex-wrap -m-4">
-      <div class="p-4 ">
-        <div class="h-full bg-gray-100 bg-opacity-75 px-8 pt-16 pb-24 rounded-lg overflow-hidden text-center relative">
-          <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">{item.title1}</h2>
-          <h1 class="title-font sm:text-2xl text-xl font-medium text-gray-900 mb-3">{item.title2}</h1>
-          <p class="leading-relaxed mb-3 text-justify">{item.description}</p>
-          
-          <div class="text-center mt-2 leading-none flex justify-center absolute bottom-0 left-0 w-full py-4">
-            
-          </div>
+    <div className="flex flex-col md:flex-row md:w-[300px] mx-6 px-3 py-4 md:py-4 bg-black rounded-[20px] flex-grow">
+      <div className="flex flex-col gap-3 place-items-center px-3 border-x text-white border-white w-full h-full">
+        <div className="flex flex-row font-bold text-center  font-custom text-4xl leading-snug items-center justify-center">
+          {item.title1}
+        </div>
+        <div className="flex flex-wrap font-bold py-1 text-3xl px-2 items-center justify-center rounded-[12px] bg-white text-black">
+          {item.title2}
+        </div>
+        <div className="flex flex-wrap font-normal text-left flex-grow">
+          <p>
+            {showMore || item.description.length <= 150
+              ? item.description
+              : `${item.description.slice(0, 150)}...`}
+          </p>
+          {item.description.length > 150 && (
+            <button onClick={handleReadmore} className="font-semibold h-3">
+              {showMore ? 'Read less' : 'Read more'}
+            </button>
+          )}
         </div>
       </div>
-      
-      
     </div>
-  </div>
-</section>
   );
 }
 
