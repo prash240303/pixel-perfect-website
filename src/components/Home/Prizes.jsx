@@ -9,7 +9,7 @@ function Prizes() {
         fetchAPI(setData, setLoading, endPoint);
     }, []);
     return (
-        <section className="prizes-section   px-6  pb-6 w-full items-start  border-t  border-black justify-start">
+        <section className="prizes-section  py-6 px-6  pb-6 w-full items-start  border-t  border-black justify-start">
             <div className='main-wrapper w-full flex flex-col gap-8  px-6 border-x  border-black '>
                 <div className=' pr-6  text-7xl'>
                     <div className='font-custom font-bold leading-normal'>AWARDS</div>
