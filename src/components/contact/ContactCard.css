@@ -2,7 +2,7 @@
   
   .img-cont {
     position: relative;
-    width: 280px;
+    width: 260px;
     height: 300px;
     border-radius: 20px;
     overflow: hidden; 
@@ -20,4 +20,5 @@
     left: 0px;
     bottom: 0px;
   }
-   
+  
+  

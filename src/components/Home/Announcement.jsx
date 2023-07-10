@@ -8,9 +8,9 @@ function Announcement({ data }) {
   }
 
   return (
-    <section className="announcement-section bg-black flex px-6 py-6 pb-6 w-full items-start justify-start">
+    <section className="announcement-section bg-black flex px-6 py-12  w-full items-start justify-start">
       <div className="main-wrapper w-full flex flex-col px-6 border-x text-white border-white">
-        <div className="text-5xl md:text-6xl font-custom font-bold leading-normal">
+        <div className="text-5xl md:text-6xl mb-6 font-custom font-bold leading-normal">
           Announcements
         </div>
         <div className="flex flex-col gap-8">
