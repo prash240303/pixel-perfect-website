@@ -16,7 +16,7 @@ function ContactUs() {
   return (
     <main className="view-container flex flex-col my-6 px-6 w-full  ">
       <div className="veiw-inner-container flex flex-col md:flex-row px-6 items-start justify-between w-full gap-6  border border-x-black  border-y-0">
-        <div className="flex  flex-col  items-start   text-[4rem] w-full font-custom font-bold ">
+        <div className="flex md:sticky md:top-20  flex-col  items-start   text-[4rem] w-full font-custom font-bold ">
           CONTACT US
         </div>
         <div className="flex contact-container flex-col items-start w-full px-6 overflow-hidden border-l border-black">
