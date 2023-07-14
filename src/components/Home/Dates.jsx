@@ -1,22 +1,23 @@
+
 import React from 'react';
 
 function Dates({ data }) {
   return (
     <section className="dates-section flex px-6 py-6 pb-6 w-full items-start justify-start">
       <div className="main-wrapper w-full flex flex-col md:flex-row justify-between pl-6 border-x border-black">
-        <div className="border-r w-full md:w-2/5 border-black">
-          <div className="font-custom font-bold text-7xl md:sticky md:top-20">IMPORTANT DATES</div>
+        <div className="md:border-r w-full md:w-2/5  md:border-black">
+          <div className="font-custom font-bold text-7xl md:sticky md:top-20 md:mb-0 mb-6">IMPORTANT DATES</div>
         </div>
-        <div className="flex dates-list w-full flex-col md:px-6 gap-6">
-          {data.map((date) => (
-            <div
-              className={`flex w-full justify-between border-b border-black pb-6 ${
-                date.newDate ? 'strikethrough' : ''
-              }`}
+        <div className="flex dates-list w-full flex-col pr-6 md:px-6 gap-6">
+          {data.map((date, index) => (
+          
+          //for triggering the last element of the dates and remove the border b 
+          <div
+              className={`flex w-full justify-between${index === data.length - 1 ? '' : ' border-b border-black pb-6'}`}
               key={date.id}
             >
               <div className="date font-custom font-bold w-full text-4xl">
-                {date.newDate ? (
+              {date.newDate ? (
                   <>
                     <strike>
                       {new Date(date.date).toLocaleDateString('en-US', {
@@ -40,7 +41,9 @@ function Dates({ data }) {
                   })
                 )}
               </div>
-              <div className="flex w-full event font-bold text-2xl md:text-3xl">{date.title}</div>
+              <div className="flex w-full event font-bold md:text-right text-end  text-xl md:text-3xl">
+              {date.title}
+              </div>
             </div>
           ))}
         </div>
