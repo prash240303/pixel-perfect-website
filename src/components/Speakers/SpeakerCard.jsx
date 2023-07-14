@@ -2,7 +2,10 @@ import React, { useState } from 'react'
 import '../../styles/Speakers.css'
 import Biocard from './Biocard';
 import { Modal } from 'react-bootstrap';
-const SpeakerCard = ({ item }) => {
+
+
+
+const SpeakerCard = ({ item  ,lastCard }) => {
   const [showModal, setShowModal] = React.useState(false);
   const [bio, setBio] = React.useState('bio'); 
   const modelHandlerOnBio = () => {
@@ -17,8 +20,7 @@ const SpeakerCard = ({ item }) => {
   }
   return (
 
-    <div className='flex  w-full flex-col md:flex-row pb-6 border-b border-black justify-between '>
-      <div className='flex w-full flex-col  items-start '>
+    <div className={`flex w-full flex-col md:flex-row pb-6 ${lastCard ? '' : 'border-b'} border-black justify-between`}>      <div className='flex w-full flex-col  items-start '>
         <div className='flex flex-col gap-1 '>
           <div className='Name-title font-semibold text-3xl leading-normal'>{item.Name}</div>
           <div className='design font-medium text-2xl leading-tight'>{item.Designation}</div>

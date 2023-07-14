@@ -1,9 +1,9 @@
 import React from 'react'
 import './PersonCard.css'
 
-const PersonCard = ({ single, item }) => {
+const PersonCard = ({ single, item, lastCard }) => {
     return (
-        <div className='flex  items-start w-full gap-6 justify-between border-b pb-6 py-6 border-black person__card'>
+        <div className={`flex items-start w-full gap-6 justify-between ${lastCard ? '' : 'border-b pb-6 border-black'}`}>
             <div className='flex flex-col  gap-6 items-start  justify-start ' >
                 <div className='flex flex-col items-start justify-start mr-6'>
                     <div className='flex flex-col  justify-center items-stretch font-bold font-custom text-[45px] '>{item.Type}</div>

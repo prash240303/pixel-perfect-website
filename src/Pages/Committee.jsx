@@ -1,27 +1,35 @@
-import { React, useEffect, useState } from 'react'
-import PersonCard from '../components/committee/PersonCard'
-import fetchAPI from '../utils/fetchAPI'
-import "../styles/Committee.css"
+import { React, useEffect, useState } from 'react';
+import PersonCard from '../components/committee/PersonCard';
+import fetchAPI from '../utils/fetchAPI';
+import '../styles/Committee.css';
+
 function Committee() {
-  const [data, setData] = useState([])
-  const [loading, setLoading] = useState(false)
-  const endPoint = '/committees/conference/647f315f62cdb3a26174fc38'
+  const [data, setData] = useState([]);
+  const [loading, setLoading] = useState(false);
+  const endPoint = '/committees/conference/647f315f62cdb3a26174fc38';
+
   useEffect(() => {
     fetchAPI(setData, setLoading, endPoint);
   }, []);
+
   return (
     <>
-      <main className="view-container flex  my-6 px-6 w-full">
-        <div className='flex md:flex-row flex-col px-6 items-start justify-between w-full gap-6  border border-x-black border-y-0'>
-          <div className='flex md:sticky md:top-20  flex-col  items-start   text-[4rem] w-[400px] font-custom font-bold '>
+      <main className="view-container flex my-6 px-6 w-full">
+        <div className="flex md:flex-row flex-col px-6 items-start justify-between w-full gap-6 border border-x-black border-y-0">
+          <div className="flex md:sticky md:top-20 flex-col items-start text-[4rem] w-[400px] font-custom font-bold">
             ORGANIZING COMMITTEE
           </div>
-          <div className=' committee-container  flex flex-col  w-full overflow-hidden md:px-6 border-l border-black'>
-           {(
-            <div id='cards-wrapper' className='flex w-full  item flex-col gap-6  items-start  align-top '>
+          <div className="committee-container flex flex-col w-full overflow-hidden md:px-6 border-l border-black">
+            <div id="cards-wrapper" className="flex w-full item flex-col gap-6 items-start align-top">
               {data.length > 0 ? (
-                data.map((item) => {
-                  return <PersonCard key={item.id} item={item} />
+                data.map((item, index) => {
+                  return (
+                    <PersonCard
+                      key={item.id}
+                      item={item}
+                      lastCard={index === data.length - 1}
+                    />
+                  );
                 })
               ) : (
                 <>
@@ -41,12 +49,11 @@ function Committee() {
                 </>
               )}
             </div>
-          )} 
           </div>
         </div>
       </main>
     </>
-  )
+  );
 }
 
-export default Committee
+export default Committee;

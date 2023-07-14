@@ -35,7 +35,7 @@ const Hero = ({ data, image }) => {
                 <a href={data.facebookLink} target='_blank'>  <img src="./Socials/facebook.svg" className='w-12' alt="" /></a>
                 <a href={data.youtubeLink} target='_blank'>  <img src="./Socials/youtube.svg" className='w-12' alt="" /></a>
               </div>
-              <div className='button  flex  font-bold text-xl px-6 py-6 justify-center items-center rounded-2xl bg-black text-white'>Register Now</div>
+              <div className='button  flex  font-bold text-xl px-6 py-6 justify-center items-center rounded-2xl hover:bg-neutral-800 bg-black text-white'>Register Now</div>
             </div>
           </div>
         </div>
