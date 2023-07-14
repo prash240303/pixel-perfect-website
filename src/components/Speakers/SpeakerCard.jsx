@@ -59,8 +59,8 @@ const SpeakerCard = ({ item }) => {
 
       {/* <img src={item.ImgLink} alt={item.Name} className='h-[330px] w-[400px] my-10 md:my-0 overflow-hidden border border-black rounded-2xl' /> */}
       
-      <div className='img-cont w-[400px]'>
-                    <img src={item.ImgLink} className='image w-55' alt={item.Name}  />
+      <div className='img-cont sm:w-[400px] w-[300px] mt-6 sm:mt-0'>
+                    <img src={item.ImgLink} className='image' alt={item.Name}  />
                     <svg width="100" height="101" className='cutout' viewBox="0 0 100 101" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M0 101H61H81C69.9543 101 61 92.0457 61 81V40C61 28.9543 52.0457 20 41 20H20C8.95433 20 0 11.0457 0 0V20V101Z" fill="white" />
                     </svg>
