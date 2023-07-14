@@ -5,7 +5,7 @@ function Dates({ data }) {
     <section className="dates-section flex px-6 py-6 pb-6 w-full items-start justify-start">
       <div className="main-wrapper w-full flex flex-col md:flex-row justify-between pl-6 border-x border-black">
         <div className="border-r w-full md:w-2/5 border-black">
-          <div className="font-custom font-bold text-7xl">IMPORTANT DATES</div>
+          <div className="font-custom font-bold text-7xl md:sticky md:top-20">IMPORTANT DATES</div>
         </div>
         <div className="flex dates-list w-full flex-col md:px-6 gap-6">
           {data.map((date) => (
