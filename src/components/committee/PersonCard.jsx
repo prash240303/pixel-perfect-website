@@ -3,11 +3,11 @@ import './PersonCard.css'
 
 const PersonCard = ({ single, item, lastCard }) => {
     return (
-        <div className={`flex items-start w-full gap-6 justify-between ${lastCard ? '' : 'border-b pb-6 border-black'}`}>
-            <div className='flex flex-col  gap-6 items-start  justify-start ' >
+        <div className={`flex items-start md:flex-row flex-col w-full gap-6 justify-between ${lastCard ? '' : 'border-b pb-6 border-black'}`}>
+            <div className='flex flex-col  md:gap-6 gap-3  items-start  justify-start ' >
                 <div className='flex flex-col items-start justify-start mr-6'>
-                    <div className='flex flex-col  justify-center items-stretch font-bold font-custom text-[45px] '>{item.Type}</div>
-                    <div className='flex flex-col justify-start font-bold   text-lg '>{item.Subtype}</div>
+                    <div className='flex flex-col  justify-center items-stretch font-bold font-custom md:text-5xl text-4xl '>{item.Type}</div>
+                    {/* <div className='flex flex-col justify-start font-bold text-lg'>{item.Subtype}</div> */}
                 </div>
                 <div className='flex flex-col items-start'>
                     <div className='flex flex-col justify-center items-stretch font-bold text-3xl'>{item.Name}</div>

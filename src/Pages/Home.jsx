@@ -29,7 +29,7 @@ function Home() {
     fetchAPI(setAnnoucementData, setLoading, announcementEndPoint)
   }, []);
 
-  const heroImage = imageData.find((image) => image.name === "WIE") || {};
+  const heroImage = imageData.find((image) => image.name === "WIE volunteers") || {};
   return (
     <>
       {loading ? (
