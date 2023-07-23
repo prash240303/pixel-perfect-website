@@ -1,4 +1,4 @@
-import './Home.css';
+import '../styles/Home.css';
 import Hero from '../components/Home/Hero';
 import Announcement from '../components/Home/Announcement';
 import About from '../components/Home/About';
@@ -35,7 +35,7 @@ function Home() {
       {loading ? (
         <div className="font-bold text-lg">Loading...</div> 
       ) : (
-        <main className="view-container flex flex-col mt-6 w-full">
+        <main className="flex flex-col mt-6 w-full">
           <Hero data={heroData} image={heroImage} />
           <Announcement data={annoucementData} />
           <About data={heroData} />

@@ -1,35 +1,34 @@
-import { React, useEffect, useState } from 'react';
-import fetchAPI from '../utils/fetchAPI';
-import ContactCard from '../components/contact/ContactCard';
-import '../styles/App.css';
-import '../styles/ContactUs.css';
+import { React, useEffect, useState } from "react";
+import fetchAPI from "../utils/fetchAPI";
+import ContactCard from "../components/contact/ContactCard";
+import "../styles/App.css";
 
 function ContactUs() {
   const [data, setData] = useState([]);
   const [loading, setLoading] = useState(false);
-  const endPoint = '/contacts/647f315f62cdb3a26174fc38';
+  const endPoint = "/contacts/647f315f62cdb3a26174fc38";
 
   useEffect(() => {
     fetchAPI(setData, setLoading, endPoint);
   }, []);
 
-  
-
   return (
-    <main className="view-container flex flex-col my-6 px-6 w-full">
-      <div className="veiw-inner-container flex flex-col md:flex-row px-6 items-start justify-between w-full gap-6  border border-x-black  border-y-0">
-        <div className="flex md:sticky md:top-20  flex-col  items-start   text-[4rem] w-full font-custom font-bold ">
+    <main className="flex flex-col my-6 px-6 w-full">
+      <div className="flex flex-col md:flex-row px-6 items-start justify-between w-full gap-6  border-x border-black">
+        <div className="flex md:sticky md:top-20  flex-col  md:text-7xl text-5xl w-96 font-custom font-bold ">
           CONTACT US
         </div>
-        <div className="flex contact-container flex-col items-start w-full px-6 overflow-hidden border-l border-black">
-          <div id="cards-wrapper" className="flex w-full item flex-col gap-6 items-start align-top">
+            
+        <div  id="cards-wrapper" className="flex flex-col w-full gap-6 items-end px-2 md:px-6 md:border-l md:border-black">
+         
             {data.length > 0 ? (
-              data.map((item) => {
-                console.log(item.id)
+              data.map((item, index) => {
+                console.log(item.id);
                 return (
                   <ContactCard
                     key={item.id} // Added key attribute with the id
                     item={item}
+                    lastCard={index === data.length - 1}
                   />
                 );
               })
@@ -38,20 +37,19 @@ function ContactUs() {
                 <ContactCard
                   single
                   item={{
-                    id: 'default',
-                    Type: 'default',
-                    Subtype: 'Loading',
-                    name: 'Loading',
-                    Designation: 'Loading',
-                    imgLink: 'Loading',
-                    Institute: 'Loading',
-                    ProfileLink: 'Loading',
+                    id: "default",
+                    Type: "default",
+                    Subtype: "Loading",
+                    name: "Loading",
+                    Designation: "Loading",
+                    imgLink: "Loading",
+                    Institute: "Loading",
+                    ProfileLink: "Loading",
                   }}
                 />
               </>
             )}
           </div>
-        </div>
       </div>
 
       <div className="flex flex-col md:flex-row px-6 items-start mt-6 justify-between w-full gap-6 border  border-x-black border-y-0">
@@ -75,12 +73,11 @@ function ContactUs() {
             <div className="flex flex-col font-medium text-2xl gap-3">
               <p>Indian Institute of Technology Gandhinagar</p>
               <p>Palaj, Gandhinagar - 382355, Gujarat, India</p>
-                <div className="mt-6 flex items-center w-full  justify-center  py-6 text-2xl font-semibold bg-[#141414] hover:bg-zinc-800 text-white rounded-full uppercase">
-                  <a href="https://maps.google.com/maps/dir//Dr+B+R+Ambedkar+National+Institute+of+Technology+Jalandhar+Grand+Trunk+Road+Barnala+-+Amritsar+Bypass+Rd+Jalandhar,+Punjab+144011/@31.3958746,75.5358439,16z/data=!4m5!4m4!1m0!1m2!1m1!1s0x391a51d30c180edf:0x5b7633718d17ef33">
-                    Veiw on Maps
-                  </a>
-                </div>
-           
+              <div className="mt-6 flex items-center w-full  justify-center  py-6 text-2xl font-semibold bg-[#141414] hover:bg-zinc-800 text-white rounded-full uppercase">
+                <a href="https://maps.google.com/maps/dir//Dr+B+R+Ambedkar+National+Institute+of+Technology+Jalandhar+Grand+Trunk+Road+Barnala+-+Amritsar+Bypass+Rd+Jalandhar,+Punjab+144011/@31.3958746,75.5358439,16z/data=!4m5!4m4!1m0!1m2!1m1!1s0x391a51d30c180edf:0x5b7633718d17ef33">
+                  Veiw on Maps
+                </a>
+              </div>
             </div>
           </div>
         </div>

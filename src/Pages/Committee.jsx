@@ -1,7 +1,6 @@
 import { React, useEffect, useState } from 'react';
 import PersonCard from '../components/committee/PersonCard';
 import fetchAPI from '../utils/fetchAPI';
-import '../styles/Committee.css';
 
 function Committee() {
   const [data, setData] = useState([]);
@@ -14,13 +13,12 @@ function Committee() {
 
   return (
     <>
-      <main className="view-container flex my-6 px-6 w-full">
-        <div className="flex md:flex-row flex-col px-6 items-start justify-between w-full gap-6 border border-x-black border-y-0">
-          <div className="flex md:sticky md:top-20 flex-col items-start text-[4rem] w-[400px] font-custom font-bold">
-            ORGANIZING COMMITTEE
-          </div>
-          <div className="committee-container flex flex-col w-full overflow-hidden md:px-6 border-l border-black">
-            <div id="cards-wrapper" className="flex w-full item flex-col gap-6 items-start align-top">
+       <main className="flex flex-col my-6 px-6 w-full">
+      <div className="flex flex-col md:flex-row px-6 items-start justify-between w-full gap-6  border-x border-black  ">
+        <div className="flex md:sticky md:top-20  flex-col flex-wrap   md:text-7xl text-5xl font-custom font-bold ">
+        ORGANISING COMMITTEE
+                </div>
+        <div  id="cards-wrapper" className="flex flex-col gap-6 w-full items-end px-2 md:px-6 md:border-l md:border-black">
               {data.length > 0 ? (
                 data.map((item, index) => {
                   return (
@@ -49,7 +47,6 @@ function Committee() {
                 </>
               )}
             </div>
-          </div>
         </div>
       </main>
     </>

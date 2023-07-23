@@ -1,33 +1,35 @@
 import React, { useState } from 'react';
 
 function Announcement({ data }) {
-  const [showMore, setShowMore] = useState(false);
+  const [showMoreArr, setShowMoreArr] = useState(data.map(() => false));
 
-  function handleReadmore() {
-    setShowMore(!showMore);
+  function handleReadmore(index) {
+    const updatedShowMoreArr = [...showMoreArr];
+    updatedShowMoreArr[index] = !updatedShowMoreArr[index];
+    setShowMoreArr(updatedShowMoreArr);
   }
 
   return (
-    <section className="announcement-section bg-black flex px-6 py-12  w-full items-start justify-start">
+    <section className="bg-black flex px-6 md:py-12 py-6  w-full items-start justify-start">
       <div className="main-wrapper w-full flex flex-col px-6 border-x text-white border-white">
-        <div className="text-5xl md:text-6xl mb-6 font-custom font-bold leading-normal">
+        <div className="text-5xl md:text-6xl md:mb-6 mb-3 font-custom font-bold leading-normal">
           Announcements
         </div>
         <div className="flex flex-col gap-8">
-          {data.map((announcement) => (
+          {data.map((announcement, index) => (
             <div className="announcement flex flex-col items-start gap-3" key={announcement.id}>
-              <div className="announcement-heading font-bold text-2xl normal-case leading-normal">
+              <div className="announcement-heading md:font-bold font-semibold text-2xl ">
                 {announcement.title}
               </div>
               <div className="annoucement-details">
                 <p>
-                  {showMore || announcement.description.length <= 170
+                  {showMoreArr[index] || announcement.description.length <= 170
                     ? announcement.description
                     : `${announcement.description.slice(0, 170)}...`}
                 </p>
                 {announcement.description.length > 170 && (
-                  <button onClick={handleReadmore} className="font-semibold">
-                    {showMore ? 'Read less' : 'Read more'}
+                  <button onClick={() => handleReadmore(index)} className="font-semibold">
+                    {showMoreArr[index] ? 'Read less' : 'Read more'}
                   </button>
                 )}
               </div>

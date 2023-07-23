@@ -13,7 +13,7 @@ const Hero = ({ data, image }) => {
   });
 
   return (
-    <section className="hero-section flex px-6 pb-6 w-full items-start justify-start">
+    <section className="flex px-6 pb-6 w-full items-start justify-start">
       <div className="main-wrapper flex flex-col gap-8 px-6 border-x border-black">
         <div className="wrapper flex flex-col gap-6">
           <div className="flex flex-col gap-1">
@@ -21,21 +21,21 @@ const Hero = ({ data, image }) => {
               {data.confName}
             </span>
           </div>
-          <div className="flex flex-col sm:flex-col md:flex-row justify-end self-stretch rounded-3xl gap-6">
-            <div className="left-side sm:w-full md:w-2/3 flex-grow flex pr-6  md:border-r md:border-black">
+          <div className="flex flex-col md:flex-row justify-end rounded-3xl md:gap-6">
+            <div className="w-full md:w-2/3 flex-grow flex md:pr-6 md:border-r md:border-black">
               <img
                 src={image.imgLink}
                 alt="conf-image"
-                className="w-full rounded-3xl aspect-auto object-cover"
+                className="w-full rounded-2xl md:rounded-3xl h-[500px] aspect-auto object-cover"
               />
             </div>
             <div className="right-side sm:w-full md:w-1/3 flex flex-col justify-between">
-              <div className="flex flex-col gap-2 py-6 border-b border-black font-bold text-3xl">
+              <div className="flex flex-col gap-2 py-6 border-b border-black font-bold text-xl md:text-3xl">
                 <span>
                   {startDate}-{endDate}
                 </span>
               </div>
-              <div className="py-6 border-b flex flex-col items-center border-black">
+              <div className="md:py-6 py-3 border-b flex flex-col items-center border-black">
                 <img src={data.logo} alt="logo" />
               </div>
               <div className="socials flex py-5 flex-row px-6 justify-between items-center">
@@ -74,7 +74,7 @@ const Hero = ({ data, image }) => {
             </div>
           </div>
         </div>
-        <div className="content-wrapper flex flex-col self-stretch font-normal text-xl">
+        <div className="flex flex-col self-stretch font-normal text-lg md:text-xl">
           {data.aboutConf}
         </div>
       </div>

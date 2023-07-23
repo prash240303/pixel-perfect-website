@@ -7,7 +7,7 @@ function About({ data }) {
         <div className='text-6xl font-custom font-bold '>
           ABOUT
         </div>
-        <div className='flex w-full '>
+        <div className='flex w-full'>
           <img src="About.png" className=" rounded-2xl w-full" alt="img" />
         </div>
         <div className='about-content md:flex gap-6  w-full'>
@@ -17,8 +17,8 @@ function About({ data }) {
               {data.aboutIns}
             </div>
           </div>
-          <div className='w-full md:w-1/3 flex flex-col gap-6  '>
-            <div className='font-semibold text-2xl '>
+          <div className='w-full md:w-1/3 flex flex-col gap-6 mt-6 md:mt-0 '>
+            <div className='font-semibold text-2xl'>
               <span className='font-base text-lg '>Organised by</span> <br /> Dr B R Ambedkar National Institute of Technology, Jalandhar, Punjab, India.
             </div>
             <div className='font-semibold text-2xl'>
