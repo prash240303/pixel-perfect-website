@@ -2,6 +2,7 @@ import { React, useEffect, useState } from "react";
 import fetchAPI from "../utils/fetchAPI";
 import ContactCard from "../components/contact/ContactCard";
 import "../styles/App.css";
+import LoadingIcon from "../components/LoadingIcon";
 
 function ContactUs() {
   const [data, setData] = useState([]);
@@ -33,21 +34,7 @@ function ContactUs() {
                 );
               })
             ) : (
-              <>
-                <ContactCard
-                  single
-                  item={{
-                    id: "default",
-                    Type: "default",
-                    Subtype: "Loading",
-                    name: "Loading",
-                    Designation: "Loading",
-                    imgLink: "Loading",
-                    Institute: "Loading",
-                    ProfileLink: "Loading",
-                  }}
-                />
-              </>
+              <LoadingIcon/>
             )}
           </div>
       </div>

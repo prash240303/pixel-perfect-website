@@ -1,6 +1,7 @@
 import { React, useEffect, useState } from 'react';
 import PersonCard from '../components/committee/PersonCard';
 import fetchAPI from '../utils/fetchAPI';
+import LoadingIcon from '../components/LoadingIcon';
 
 function Committee() {
   const [data, setData] = useState([]);
@@ -30,21 +31,7 @@ function Committee() {
                   );
                 })
               ) : (
-                <>
-                  <PersonCard
-                    single
-                    item={{
-                      id: 'default',
-                      Type: 'default',
-                      Subtype: 'Loading',
-                      Name: 'Loading',
-                      Designation: 'Loading',
-                      imgLink: 'Loading',
-                      Institute: 'Loading',
-                      ProfileLink: 'Loading',
-                    }}
-                  />
-                </>
+                <LoadingIcon/>
               )}
             </div>
         </div>

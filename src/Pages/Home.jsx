@@ -6,6 +6,7 @@ import Dates from '../components/Home/Dates';
 import Sponsers from '../components/Home/Sponsers';
 import Prizes from '../components/Home/Prizes';
 import fetchAPI from '../utils/fetchAPI';
+import LoadingIcon from '../components/LoadingIcon';
 import { React, useEffect, useState } from 'react';
 
 function Home() {
@@ -32,18 +33,20 @@ function Home() {
   const heroImage = imageData.find((image) => image.name === "WIE volunteers") || {};
   return (
     <>
-      {loading ? (
-        <div className="font-bold text-lg">Loading...</div> 
-      ) : (
-        <main className="flex flex-col mt-6 w-full">
-          <Hero data={heroData} image={heroImage} />
-          <Announcement data={annoucementData} />
-          <About data={heroData} />
-          <Dates data={datesData} />
-          <Sponsers data={sponsersData} />
-          <Prizes />
-        </main>
-      )}
+      <main className="flex flex-col mt-6 w-full">
+        {loading ? (
+          <LoadingIcon />
+        ) : (
+          <>
+            <Hero data={heroData} image={heroImage} />
+            <Announcement data={annoucementData} />
+            <About data={heroData} />
+            <Dates data={datesData} />
+            <Sponsers data={sponsersData} />
+            <Prizes />
+          </>
+        )}
+      </main>
     </>
   );
 }

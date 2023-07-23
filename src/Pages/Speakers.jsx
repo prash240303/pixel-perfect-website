@@ -2,6 +2,7 @@ import { React, useEffect, useState } from 'react';
 import SpeakerCard from '../components/Speakers/SpeakerCard';
 import fetchAPI from '../utils/fetchAPI';
 import '../styles/Speakers.css';
+import LoadingIcon from '../components/LoadingIcon';
 
 function Speakers() {
   const [data, setData] = useState([]);
@@ -32,25 +33,7 @@ function Speakers() {
                   );
                 })
               ) : (
-                <>
-                  <SpeakerCard
-                    single
-                    item={{
-                      id: 'default',
-                      Type: 'default',
-                      Subtype: 'Loading',
-                      Name: 'Loading',
-                      Designation: 'Loading',
-                      ImgLink: 'Loading',
-                      Institute: 'Loading',
-                      ProfileLink: 'Loading',
-                      TalkType: 'loading',
-                      TalkTitle: 'Loading',
-                      Bio: 'Loading',
-                      Abstract: 'Loading',
-                    }}
-                  />
-                </>
+                <LoadingIcon/>
               )}
             </div>
           </div>
