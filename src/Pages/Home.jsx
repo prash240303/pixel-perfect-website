@@ -8,6 +8,9 @@ import Prizes from '../components/Home/Prizes';
 import fetchAPI from '../utils/fetchAPI';
 import LoadingIcon from '../components/LoadingIcon';
 import { React, useEffect, useState } from 'react';
+import Skeleton from 'react-loading-skeleton'
+import 'react-loading-skeleton/dist/skeleton.css'
+
 
 function Home() {
   const [heroData, setHeroData] = useState({});
@@ -33,9 +36,13 @@ function Home() {
   const heroImage = imageData.find((image) => image.name === "WIE volunteers") || {};
   return (
     <>
-      <main className="flex flex-col mt-6 w-full">
+      <main className="flex flex-col mt-6 w-full max-w-8xl mx-auto">
         {loading ? (
-          <LoadingIcon />
+          // <LoadingIcon />
+          <Skeleton
+          count={5}
+          
+          />
         ) : (
           <>
             <Hero data={heroData} image={heroImage} />

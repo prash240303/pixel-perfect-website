@@ -18,7 +18,7 @@ function Navbaar() {
   };
 
   const navList = (
-    <ul className="mb-4 mt-2 flex flex-col lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:flex-wrap">
+    <ul className="mb-4 mt-2 flex flex-col lg:mb-0 lg:mt-0 lg:flex-row lg:items-center  lg:flex-wrap">
       <Typography
         as="li"
         variant="small"

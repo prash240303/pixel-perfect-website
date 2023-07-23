@@ -14,7 +14,7 @@ function Committee() {
 
   return (
     <>
-       <main className="flex flex-col my-6 px-6 w-full">
+       <main className="flex flex-col my-6 px-6 w-full  max-w-8xl mx-auto">
       <div className="flex flex-col md:flex-row px-6 items-start justify-between w-full gap-6  border-x border-black  ">
         <div className="flex md:sticky md:top-20  flex-col flex-wrap   md:text-7xl text-5xl font-custom font-bold ">
         ORGANISING COMMITTEE
